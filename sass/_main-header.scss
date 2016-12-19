@@ -1,0 +1,23 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    height: 65px;
+    background: var(--dark-bg);
+    line-height: 65px;
+    border-bottom: 1px solid #454545;
+    .logo h1 {
+        margin: 0;
+        font-family: var(--logo-font);
+    }
+    a.logo {
+        color: var(--active-color);
+        transition: color 0.2s;
+        line-height: 1;
+        &:hover {
+            color: var(--warm-bg);
+        }
+    }
+}

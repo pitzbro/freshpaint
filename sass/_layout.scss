@@ -1,0 +1,31 @@
+/* Breakpoint mixins */
+
+@mixin for-mobile-only {
+  @media (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin for-narrow-layout {
+  @media (max-width: $narrow-breakpoint) {
+    @content;
+  }
+}
+
+/*----------  Containers  ----------*/
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 70px;
+  @include for-narrow-layout {  
+      padding: 0 40px;
+  }
+  @include for-mobile-only {  
+      padding: 0 20px;
+  }
+}
+
+.inner-container {
+  position: relative;
+}
