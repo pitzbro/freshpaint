@@ -76,20 +76,10 @@ textarea {
   --container-width: 960px;
   --inner-container-width: 900px;
   /* Fonts */
-  --primary-font: Lato;
-  --title-font: Maven;
-  --logo-font: Molle;
+  --primary-font: Open Sans;
   --font-small: 0.75rem;
   /* Colors */
-  --main-color: #bebebe;
-  --title-color: #e0e0e0;
-  --active-color: #2eb398;
-  --active-second-color: #57938b;
-  /* Background Colors */
-  --dark-bg: #323232;
-  --warm-bg: #f19e0d;
-  /* Borders */
-  --light-border: #e4e9eb; }
+  --main-color: #000; }
 
 /* Breakpoint mixins */
 /*----------  Containers  ----------*/
@@ -123,7 +113,15 @@ html {
       font-size: 14px; } }
 
 body {
-  background: linear-gradient(to bottom, #57938b 0px, #57938b 65px, #ffffff 125px); }
+  background-color: #f9eff3;
+  background: url("../images/background/003.jpg") no-repeat center center fixed;
+  background-size: cover; }
+  body.context-art-fair {
+    background-image: url("../images//background/002.jpg"); }
+  body.context-family {
+    background-image: url("../images//background/001.jpg"); }
+  body.context-archive {
+    background-image: url("../images//background/004.jpg"); }
 
 a {
   cursor: pointer;

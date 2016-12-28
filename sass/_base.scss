@@ -16,7 +16,12 @@ html {
   }
 }
 body {
-  background: linear-gradient(to bottom, #57938b 0px,#57938b 65px,#ffffff 125px);
+	background-color: #f9eff3;
+	background: url('../images/background/003.jpg') no-repeat center center fixed;
+  background-size: cover;
+  &.context-art-fair { background-image: url('../images//background/002.jpg'); }
+  &.context-family { background-image: url('../images//background/001.jpg'); }
+  &.context-archive { background-image: url('../images//background/004.jpg'); }
 }
 
 a {
