@@ -83,19 +83,8 @@ textarea {
 
 /* Breakpoint mixins */
 /*----------  Containers  ----------*/
-.container {
-  max-width: var(--container-width);
-  margin: 0 auto;
-  padding: 0 70px; }
-  @media (max-width: 730px) {
-    .container {
-      padding: 0 40px; } }
-  @media (max-width: 620px) {
-    .container {
-      padding: 0 20px; } }
-
-.inner-container {
-  position: relative; }
+.zone {
+  background: #fff; }
 
 * {
   box-sizing: border-box; }
@@ -149,36 +138,41 @@ fieldset {
 fieldset {
   border: none; }
 
-::-webkit-input-placeholder {
+/*::-webkit-input-placeholder {
   color: #626262;
-  font-size: 0.875rem;
-  font-family: var(--primary-font); }
+  font-size: rem(14px);
+  font-family: var(--primary-font);
+}
 
 .form-control {
   border: none;
   border-bottom: 1px solid #000;
   background-color: transparent;
   width: 100%;
-  padding: 0.5em 0.2em; }
+  padding: 0.5em 0.2em;
+}
 
 .form-group {
-  margin: 1em 0; }
+  margin: 1em 0;
+}
 
-.contact-form__sumbit-button {
+.contact-form__sumbit-button{
   width: 90px;
   height: 37px;
-  background: var(--active-color); }
+  background : var(--active-color);
+}
 
-@media (max-width: 620px) {
-  .contact .container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center; } }
-
+.contact .container {
+  @include for-mobile-only {  
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}*/
 /* Components */
-main {
-  overflow: hidden; }
-
+/*main {
+    overflow: hidden;
+}*/
 .main-nav__items {
   /*display: inline-block;*/
   float: right; }
@@ -253,22 +247,26 @@ main {
   transform: scaleY(1);
   opacity: 1; }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 200;
-  height: 65px;
-  background: var(--dark-bg);
-  line-height: 65px;
-  border-bottom: 1px solid #454545; }
-  header .logo h1 {
-    margin: 0;
-    font-family: var(--logo-font); }
-  header a.logo {
-    color: var(--active-color);
-    transition: color 0.2s;
-    line-height: 1; }
-    header a.logo:hover {
-      color: var(--warm-bg); }
+/*header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 200;
+    height: 65px;
+    background: var(--dark-bg);
+    line-height: 65px;
+    border-bottom: 1px solid #454545;
+    .logo h1 {
+        margin: 0;
+        font-family: var(--logo-font);
+    }
+    a.logo {
+        color: var(--active-color);
+        transition: color 0.2s;
+        line-height: 1;
+        &:hover {
+            color: var(--warm-bg);
+        }
+    }
+}*/
