@@ -22,3 +22,14 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'PauzaFOT-Book';
+    src: url('../fonts/pauzafot-book-webfont.eot');
+    src: url('../fonts/pauzafot-book-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pauzafot-book-webfont.woff') format('woff'),
+         url('../fonts/pauzafot-book-webfont.ttf') format('truetype'),
+         url('../fonts/pauzafot-book-webfont.svg#alefregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -71,15 +71,25 @@ textarea {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'PauzaFOT-Book';
+  src: url("../fonts/pauzafot-book-webfont.eot");
+  src: url("../fonts/pauzafot-book-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pauzafot-book-webfont.woff") format("woff"), url("../fonts/pauzafot-book-webfont.ttf") format("truetype"), url("../fonts/pauzafot-book-webfont.svg#alefregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 :root {
   /* Layout */
   --container-width: 960px;
   --inner-container-width: 900px;
+  --header-height: 125px;
   /* Fonts */
   --primary-font: Open Sans;
+  --number-font: PauzaFOT-Book;
   --font-small: 0.75rem;
   /* Colors */
-  --main-color: #000; }
+  --main-color: #000;
+  --light-color: #4B4B4B; }
 
 /* Breakpoint mixins */
 /*----------  Containers  ----------*/
@@ -247,26 +257,18 @@ fieldset {
   transform: scaleY(1);
   opacity: 1; }
 
-/*header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 200;
-    height: 65px;
-    background: var(--dark-bg);
-    line-height: 65px;
-    border-bottom: 1px solid #454545;
-    .logo h1 {
-        margin: 0;
-        font-family: var(--logo-font);
-    }
-    a.logo {
-        color: var(--active-color);
-        transition: color 0.2s;
-        line-height: 1;
-        &:hover {
-            color: var(--warm-bg);
-        }
-    }
-}*/
+header {
+  height: var(--header-height); }
+  header .fresh-paint-header .views-row-last {
+    display: flex;
+    height: var(--header-height);
+    align-items: center; }
+  header .header-logo {
+    width: 160px; }
+  header .header-date {
+    font-family: var(--number-font);
+    font-size: 2.1875rem;
+    color: var(--light-color); }
+  header .region-header-second {
+    font-size: var(--font-small);
+    color: var(--light-color); }
