@@ -7,14 +7,19 @@ $narrow-breakpoint: 730px;
   --container-width: $container-width;
   --inner-container-width: 900px;
   --header-height: 125px;
+  --side-padding: rem(20px);
   /* Fonts */
   --primary-font: Open Sans;
   --number-font: PauzaFOT-Book;
-  --font-small: rem(12px);
-  
+  --font-small: rem(12px); 
   /* Colors */
   --main-color: #000;
   --light-color: #4B4B4B;
+
+  --curr-link-color: #ec1c24;
+  --curr-bg-link-color: #ec1c24;
+
+
 }
 
 

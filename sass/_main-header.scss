@@ -1,8 +1,14 @@
 header {
+    
     height: var(--header-height);
+    overflow: hidden;
+    font-size: var(--font-small);
+
+    .zone-header {
+        padding: 20px 0;
+    }
     .fresh-paint-header .views-row-last {
         display: flex;
-        height: var(--header-height);
         align-items: center;
     }
     .header-logo {
@@ -16,5 +22,95 @@ header {
     .region-header-second {
         font-size: var(--font-small);
         color: var(--light-color);
+        padding-right: var(--side-padding);
+    }
+    .region-header-first{
+        padding-left: var(--side-padding);
+    }
+}
+
+.social-links-list {
+    font-size: rem(18px);
+    margin-bottom: 16px;
+    li {
+        margin-left: 5px;
+    }
+    li:not(:last-child) {
+        margin-right: 5px;
+        &:after {
+            content: ' | ';
+        }
+    }
+    a:hover {
+        color: var(--curr-link-color);
+    }
+}
+
+.region-blockgroup-header-panel-inner {
+    display: flex;
+    justify-content: flex-end;
+    > div {
+        margin: 0 0 0 20px;
+    }
+}
+
+#block-search-form {
+    position: relative;
+    height: 25px;
+    width: 150px;
+    border-top: 1px solid #d8d7d6;
+    border-bottom: 1px solid #d8d7d6;
+    color: var(--light-color);
+    
+    #edit-search-block-form--2 {
+        line-height: 10px;
+        border: none;
+        background-color: transparent;
+        width: 100px;
+        height: 23px;
+        position: absolute;
+        right: 0;
+    }
+    .form-actions input {
+        left: 0;
+        line-height: 25px;
+        margin-left: 5px;
+        width: 41px;
+        border: none;
+        background-color: transparent;
+        background: transparent;
+        position: absolute;
+        padding: 0;
+        font-weight: normal;
+    }
+}
+
+.newsletter-link-block {
+    .newsletter-link {
+        display: block;     
+        width: 104px;
+        height: 25px;
+        color: #FFF;
+        background: #000;
+        line-height: 25px;
+        text-align: center;
+        &:hover {
+            background: var(--curr-bg-link-color);
+            color: #fff;
+        }
+    }
+
+}
+
+#block-locale-language, #block-block-16, #block-block-15 {
+    width: 25px;
+    border-top: 1px solid #D8D7D6;
+    border-bottom: 1px solid #D8D7D6;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 23px;
+    font-weight: bold;
+    .active {
+        display: none;      
     }
 }
