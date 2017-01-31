@@ -42,7 +42,7 @@ header {
         }
     }
     a:hover {
-        color: var(--curr-link-color);
+        color: var(--curr-text-color);
     }
 }
 
@@ -95,7 +95,7 @@ header {
         line-height: 25px;
         text-align: center;
         &:hover {
-            background: var(--curr-bg-link-color);
+            background: var(--curr-bg-color);
             color: #fff;
         }
     }

@@ -7,17 +7,14 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 }
 
 html {
-
-
-
   color: var(--main-color);
   font-family: var(--primary-font);
   // @include for-narrow-layout {
   //   font-size: 14px;
   // }
 }
-body {
 
+body {
 	background-color: #f9eff3;
 	background: url('../images/background/003.jpg') no-repeat center center fixed;
   background-size: cover;
@@ -31,6 +28,9 @@ a {
   color: currentColor;
   text-decoration: none;
   display: inline-block;
+  &:hover {
+    color: #000;
+  }
 }
 
 h1, .bulletin-main-title, .main-title {
@@ -39,6 +39,7 @@ h1, .bulletin-main-title, .main-title {
   line-height: 60px;
   font-size: rem(25px);
   margin-bottom: 30px;
+  font-weight: normal;
 }
 
 ul,

@@ -2,8 +2,18 @@ a#main-content {
     display: none;
 }
 
+.block-system {
+    margin-bottom: 40px;
+}
+
 .region-content {
     padding-right: var(--side-padding);
-    font-size: rem(12px);
-    line-height: rem(18px);
+    font-size: rem(14px);
+    line-height: rem(22px);
+    a {
+        color: var(--curr-text-color);
+          &:hover {
+            text-decoration: underline;
+        }
+    }
 }

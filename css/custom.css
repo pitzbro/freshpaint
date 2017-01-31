@@ -2423,8 +2423,8 @@ textarea {
   /* Colors */
   --main-color: #000;
   --light-color: #4B4B4B;
-  --curr-link-color: #ec1c24;
-  --curr-bg-link-color: #ec1c24; }
+  --curr-text-color: #ec1c24;
+  --curr-bg-color: #ec1c24; }
 
 /* Breakpoint mixins */
 /*----------  Containers  ----------*/
@@ -2460,13 +2460,16 @@ a {
   color: currentColor;
   text-decoration: none;
   display: inline-block; }
+  a:hover {
+    color: #000; }
 
 h1, .bulletin-main-title, .main-title {
   border-top: solid 3px #231f20;
   border-bottom: solid 3px #231f20;
   line-height: 60px;
   font-size: 1.5625rem;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  font-weight: normal; }
 
 ul,
 fieldset {
@@ -2507,14 +2510,47 @@ fieldset {
         text-align: center;
     }
 }*/
+/*----------------Slick Gallery-----------------*/
+.slick-arrow, .slick-down {
+  height: 65px;
+  width: 65px; }
+
+.slick-arrow::before {
+  content: "";
+  display: block;
+  height: 65px;
+  width: 65px;
+  background: url(../images/gallery-arrows-sprite.png);
+  background-position: 0 -65px; }
+
+.slick-arrow.slick-next::before {
+  background-position: -65px -65px; }
+
+/*-----------------Masonry--------------------*/
+.masonry-item {
+  width: 33.333%;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0; }
+  .masonry-item > div {
+    margin: 0 30px 30px 0; }
+
 /* Components */
 a#main-content {
   display: none; }
 
+.block-system {
+  margin-bottom: 40px; }
+
 .region-content {
   padding-right: var(--side-padding);
-  font-size: 0.75rem;
-  line-height: 1.125rem; }
+  font-size: 0.875rem;
+  line-height: 1.375rem; }
+  .region-content a {
+    color: var(--curr-text-color); }
+    .region-content a:hover {
+      text-decoration: underline; }
 
 .region-content-menu-inner {
   padding: 0 0 0 var(--side-padding); }
@@ -2552,6 +2588,18 @@ ul.menu a {
   ul.menu a:hover {
     background-color: #e3e3e0; }
 
+.region-footer-first-inner {
+  border-top: solid 2px #4b4b4b;
+  margin: 0 47px;
+  height: 70px;
+  text-align: end;
+  line-height: 60px;
+  color: #939393;
+  font-size: 10px;
+  text-align: right; }
+  .region-footer-first-inner a {
+    color: #000; }
+
 header {
   height: var(--header-height);
   overflow: hidden;
@@ -2584,7 +2632,7 @@ header {
     .social-links-list li:not(:last-child):after {
       content: ' | '; }
   .social-links-list a:hover {
-    color: var(--curr-link-color); }
+    color: var(--curr-text-color); }
 
 .region-blockgroup-header-panel-inner {
   display: flex;
@@ -2628,7 +2676,7 @@ header {
   line-height: 25px;
   text-align: center; }
   .newsletter-link-block .newsletter-link:hover {
-    background: var(--curr-bg-link-color);
+    background: var(--curr-bg-color);
     color: #fff; }
 
 #block-locale-language, #block-block-16, #block-block-15 {
