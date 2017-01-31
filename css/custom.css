@@ -2442,12 +2442,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 
 html {
   color: var(--main-color);
-  font-family: var(--primary-font);
-  font-size: 16px;
-  line-height: 1.7; }
-  @media (max-width: 730px) {
-    html {
-      font-size: 14px; } }
+  font-family: var(--primary-font); }
 
 body {
   background-color: #f9eff3;
@@ -2466,7 +2461,7 @@ a {
   text-decoration: none;
   display: inline-block; }
 
-h1 {
+h1, .bulletin-main-title, .main-title {
   border-top: solid 3px #231f20;
   border-bottom: solid 3px #231f20;
   line-height: 60px;
@@ -2515,6 +2510,11 @@ fieldset {
 /* Components */
 a#main-content {
   display: none; }
+
+.region-content {
+  padding-right: var(--side-padding);
+  font-size: 0.75rem;
+  line-height: 1.125rem; }
 
 .region-content-menu-inner {
   padding: 0 0 0 var(--side-padding); }
