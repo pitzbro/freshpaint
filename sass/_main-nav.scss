@@ -33,6 +33,10 @@ ul.menu {
                     background-color: #f1f1ee;
                     
                 }
+                &.active {
+                    background: #999;
+                    color: #fff;
+                }
             }
         }
     }

@@ -1,0 +1,32 @@
+/*-----------------Small Teasers Preview-----------------------*/
+
+.small-prev-view {
+    width: 755px;
+}
+
+.small-thumbs-row {
+    width: 136px;
+    margin: 0 15px 10px 0;
+    filter: grayscale(100%);
+    color: var(--light-color) !important;
+    &:hover {
+        a {
+        color: var(--curr-text-color) !important;
+        text-decoration: none !important;
+        }
+
+        filter: grayscale(0%);
+    }
+ 
+
+    .image-text-block {
+        padding-top: 10px;
+        font-size: var(--font-small);
+        line-height: var(--line-height-small);
+        display: block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 136px;
+    }
+}
