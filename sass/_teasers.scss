@@ -1,7 +1,26 @@
-/*-----------------Small Teasers Preview-----------------------*/
+/*-----------------Main Teasers Preview-----------------------*/
 
-.small-prev-view {
+.teaser-row {
+    width: 100%;
+    font-size: var(--font-small);
+    line-height: var(--line-height-small);
+    color: var(--light-color) !important;
+    margin-bottom: 30px;
+    .teaser-image {
+        width: 170px;
+    }
+    .teaser-info {
+        width: calc(100% - 150px);
+        padding-left: 20px;
+        max-width: 470px;
+    }
+}
+
+/*-----------------Small Teasers Thumbnails Preview-----------------------*/
+
+.small-thumbs-block > .view-content {
     width: 755px;
+    margin-bottom: 30px;
 }
 
 .small-thumbs-row {

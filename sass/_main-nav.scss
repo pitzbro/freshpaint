@@ -21,6 +21,9 @@ ul.menu {
         font-size: rem(13px);
         line-height: rem(22px);
         font-weight: bold;
+        &.active-trail > a {
+            background-color: #e3e3e0;
+        }
         li {
             padding: 2px 0;
             font-size: rem(11px);
@@ -34,8 +37,8 @@ ul.menu {
                     
                 }
                 &.active {
-                    background: #999;
-                    color: #fff;
+                    background-color: #f1f1ee;
+                    // color: #fff;
                 }
             }
         }

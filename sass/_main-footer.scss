@@ -9,5 +9,8 @@
     text-align: right;
     a {
         color: #000;
+        &:hover {
+            color: var(--curr-text-color);
+        }
     }
 }

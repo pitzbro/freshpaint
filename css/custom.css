@@ -2360,6 +2360,12 @@ textarea {
 .clear-both {
   clear: both; }
 
+.small-content {
+  margin-bottom: 40px; }
+
+.site-block {
+  margin-bottom: 20px; }
+
 /*----------  Flex Helpers  ----------*/
 .flex, .flex-view .view-content {
   display: flex; }
@@ -2420,7 +2426,7 @@ textarea {
   --primary-font: Open Sans;
   --number-font: PauzaFOT-Book;
   --font-small: 0.75rem;
-  --line-height-small: 1rem;
+  --line-height-small: 1.125rem;
   /* Colors */
   --main-color: #000;
   --light-color: #4B4B4B;
@@ -2456,6 +2462,15 @@ body {
   body.context-archive {
     background-image: url("../images//background/004.jpg"); }
 
+::-moz-selection {
+  /* Code for Firefox */
+  color: #fff;
+  background: var(--curr-text-color); }
+
+::selection {
+  color: #fff;
+  background: var(--curr-text-color); }
+
 a {
   cursor: pointer;
   color: currentColor;
@@ -2471,6 +2486,26 @@ h1, .bulletin-main-title, .main-title {
   font-size: 1.5625rem;
   margin-bottom: 30px;
   font-weight: normal; }
+
+h2 {
+  border-top: solid 2px #231f20;
+  border-bottom: solid 2px #231f20;
+  line-height: 40px;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  font-weight: normal; }
+
+h3 {
+  border-top: solid 1px #231f20;
+  border-bottom: solid 1px #231f20;
+  line-height: 35px;
+  font-size: 1.125rem;
+  margin-bottom: 15px;
+  font-weight: normal; }
+
+h4 {
+  font-size: 1rem;
+  margin-bottom: 5px; }
 
 ul,
 fieldset {
@@ -2537,9 +2572,24 @@ fieldset {
   .masonry-item > div {
     margin: 0 30px 30px 0; }
 
-/*-----------------Small Teasers Preview-----------------------*/
-.small-prev-view {
-  width: 755px; }
+/*-----------------Main Teasers Preview-----------------------*/
+.teaser-row {
+  width: 100%;
+  font-size: var(--font-small);
+  line-height: var(--line-height-small);
+  color: var(--light-color) !important;
+  margin-bottom: 30px; }
+  .teaser-row .teaser-image {
+    width: 170px; }
+  .teaser-row .teaser-info {
+    width: calc(100% - 150px);
+    padding-left: 20px;
+    max-width: 470px; }
+
+/*-----------------Small Teasers Thumbnails Preview-----------------------*/
+.small-thumbs-block > .view-content {
+  width: 755px;
+  margin-bottom: 30px; }
 
 .small-thumbs-row {
   width: 136px;
@@ -2568,7 +2618,8 @@ a#main-content {
 .region-content {
   padding-right: var(--side-padding);
   font-size: 0.875rem;
-  line-height: 1.5rem; }
+  line-height: 1.5rem;
+  margin-bottom: 40px; }
   .region-content img {
     border: 0;
     height: auto;
@@ -2578,7 +2629,8 @@ a#main-content {
     .region-content a:hover {
       text-decoration: underline; }
   .region-content p {
-    max-width: 600px; }
+    max-width: 600px;
+    margin-bottom: 1em; }
 
 .region-content-menu-inner {
   padding: 0 0 0 var(--side-padding); }
@@ -2599,6 +2651,8 @@ ul.menu li {
   font-size: 0.8125rem;
   line-height: 1.375rem;
   font-weight: bold; }
+  ul.menu li.active-trail > a {
+    background-color: #e3e3e0; }
   ul.menu li li {
     padding: 2px 0;
     font-size: 0.6875rem;
@@ -2610,8 +2664,7 @@ ul.menu li {
       ul.menu li li a:hover {
         background-color: #f1f1ee; }
       ul.menu li li a.active {
-        background: #999;
-        color: #fff; }
+        background-color: #f1f1ee; }
 
 ul.menu a {
   display: block;
@@ -2630,6 +2683,8 @@ ul.menu a {
   text-align: right; }
   .region-footer-first-inner a {
     color: #000; }
+    .region-footer-first-inner a:hover {
+      color: var(--curr-text-color); }
 
 header {
   height: var(--header-height);

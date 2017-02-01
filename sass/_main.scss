@@ -6,6 +6,7 @@ a#main-content {
     padding-right: var(--side-padding);
     font-size: rem(14px);
     line-height: rem(24px);
+    margin-bottom: 40px;
     img {
         border: 0;
         height: auto;
@@ -19,5 +20,6 @@ a#main-content {
     }
     p {
         max-width: 600px;
+        margin-bottom: 1em;
     }
 }

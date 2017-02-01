@@ -39,6 +39,16 @@ textarea {
   clear: both;
 }
 
+.small-content {
+  // font-size: var(--font-small);
+  // line-height: var(--line-height-small);
+  margin-bottom: 40px;
+}
+
+.site-block {
+  margin-bottom: 20px; 
+}
+
 /*----------  Flex Helpers  ----------*/
 
 .flex, .flex-view .view-content {
