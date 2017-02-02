@@ -2,7 +2,7 @@ a#main-content {
     display: none;
 }
 
-.region-content {
+.region-content, .region-content-info {
     padding-right: var(--side-padding);
     font-size: rem(14px);
     line-height: rem(24px);

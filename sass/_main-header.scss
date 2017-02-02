@@ -23,6 +23,12 @@ header {
         font-size: var(--font-small);
         color: var(--light-color);
         padding-right: var(--side-padding);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 90px;
+
     }
     .region-header-first{
         padding-left: var(--side-padding);

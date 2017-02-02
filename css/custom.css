@@ -2364,7 +2364,8 @@ textarea {
   margin-bottom: 40px; }
 
 .site-block {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  display: block; }
 
 /*----------  Flex Helpers  ----------*/
 .flex, .flex-view .view-content {
@@ -2482,7 +2483,8 @@ a {
 h1, .bulletin-main-title, .main-title {
   border-top: solid 3px #231f20;
   border-bottom: solid 3px #231f20;
-  line-height: 60px;
+  line-height: 36px;
+  padding: 10px 0;
   font-size: 1.5625rem;
   margin-bottom: 30px;
   font-weight: normal; }
@@ -2490,7 +2492,8 @@ h1, .bulletin-main-title, .main-title {
 h2 {
   border-top: solid 2px #231f20;
   border-bottom: solid 2px #231f20;
-  line-height: 40px;
+  line-height: 30px;
+  padding: 5px 0;
   font-size: 1.25rem;
   margin-bottom: 20px;
   font-weight: normal; }
@@ -2498,7 +2501,8 @@ h2 {
 h3 {
   border-top: solid 1px #231f20;
   border-bottom: solid 1px #231f20;
-  line-height: 35px;
+  line-height: 25px;
+  padding: 5px 0;
   font-size: 1.125rem;
   margin-bottom: 15px;
   font-weight: normal; }
@@ -2506,6 +2510,9 @@ h3 {
 h4 {
   font-size: 1rem;
   margin-bottom: 5px; }
+
+.linked-heading {
+  border-color: var(--curr-text-color); }
 
 ul,
 fieldset {
@@ -2562,6 +2569,11 @@ fieldset {
 .slick-arrow.slick-next::before {
   background-position: -65px -65px; }
 
+/*-----------------Scrolling Gallery--------------------*/
+.scrolling-gallery img {
+  width: 100%;
+  margin-bottom: 20px; }
+
 /*-----------------Masonry--------------------*/
 .masonry-item {
   width: 33.333%;
@@ -2573,15 +2585,15 @@ fieldset {
     margin: 0 30px 30px 0; }
 
 /*-----------------Main Teasers Preview-----------------------*/
-.teaser-row {
+.main-teaser-view {
   width: 100%;
   font-size: var(--font-small);
   line-height: var(--line-height-small);
   color: var(--light-color) !important;
   margin-bottom: 30px; }
-  .teaser-row .teaser-image {
+  .main-teaser-view .teaser-image {
     width: 170px; }
-  .teaser-row .teaser-info {
+  .main-teaser-view .teaser-info {
     width: calc(100% - 150px);
     padding-left: 20px;
     max-width: 470px; }
@@ -2615,20 +2627,20 @@ fieldset {
 a#main-content {
   display: none; }
 
-.region-content {
+.region-content, .region-content-info {
   padding-right: var(--side-padding);
   font-size: 0.875rem;
   line-height: 1.5rem;
   margin-bottom: 40px; }
-  .region-content img {
+  .region-content img, .region-content-info img {
     border: 0;
     height: auto;
     max-width: 100%; }
-  .region-content a {
+  .region-content a, .region-content-info a {
     color: var(--curr-text-color); }
-    .region-content a:hover {
+    .region-content a:hover, .region-content-info a:hover {
       text-decoration: underline; }
-  .region-content p {
+  .region-content p, .region-content-info p {
     max-width: 600px;
     margin-bottom: 1em; }
 
@@ -2704,7 +2716,11 @@ header {
   header .region-header-second {
     font-size: var(--font-small);
     color: var(--light-color);
-    padding-right: var(--side-padding); }
+    padding-right: var(--side-padding);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90px; }
   header .region-header-first {
     padding-left: var(--side-padding); }
 
@@ -2775,3 +2791,6 @@ header {
   font-weight: bold; }
   #block-locale-language .active, #block-block-16 .active, #block-block-15 .active {
     display: none; }
+
+.winner a:before {
+  content: "Winner "; }

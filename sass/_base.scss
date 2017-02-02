@@ -46,8 +46,9 @@ a {
 h1, .bulletin-main-title, .main-title {
   border-top: solid 3px #231f20;
   border-bottom: solid 3px #231f20;
-  line-height: 60px;
-  font-size: rem(25px);
+  line-height: 36px;
+  padding: 10px 0;
+  font-size: 1.5625rem;
   margin-bottom: 30px;
   font-weight: normal;
 }
@@ -55,8 +56,9 @@ h1, .bulletin-main-title, .main-title {
 h2 {
   border-top: solid 2px #231f20;
   border-bottom: solid 2px #231f20;
-  line-height: 40px;
-  font-size: rem(20px);
+  line-height: 30px;
+  padding: 5px 0;
+  font-size: 1.25rem;
   margin-bottom: 20px;
   font-weight: normal;
 }
@@ -64,8 +66,9 @@ h2 {
 h3 {
   border-top: solid 1px #231f20;
   border-bottom: solid 1px #231f20;
-  line-height: 35px;
-  font-size: rem(18px);
+  line-height: 25px;
+  padding: 5px 0;
+  font-size: 1.125rem;
   margin-bottom: 15px;
   font-weight: normal;
 }
@@ -73,6 +76,10 @@ h3 {
 h4 {
     font-size: rem(16px);
     margin-bottom: 5px;
+}
+
+.linked-heading {
+  border-color: var(--curr-text-color);
 }
 
 ul,
