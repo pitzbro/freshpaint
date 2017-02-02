@@ -3,7 +3,7 @@ a#main-content {
 }
 
 .region-content, .region-content-info {
-    padding-right: var(--side-padding);
+    padding: 0 var(--side-padding) 0 0;
     font-size: rem(14px);
     line-height: rem(24px);
     margin-bottom: 40px;
@@ -22,4 +22,8 @@ a#main-content {
         max-width: 600px;
         margin-bottom: 1em;
     }
+}
+
+.main-text {
+    margin-bottom: 40px;
 }

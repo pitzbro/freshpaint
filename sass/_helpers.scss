@@ -88,4 +88,33 @@ textarea {
   height: 100%;
 }
 
-
+a.round-button {
+    border-radius: 50%;
+    color: #fff;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    line-height: 18px;
+    background: #EE944B;
+    font-size: 16px;
+    font-family: Alef_Bold;
+    width: 98px;
+    height: 98px;
+    -ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+    background-image: -webkit-linear-gradient(5deg, #F0594C, #F0964C);
+    background-image: -o-linear-gradient(5deg, #F0594C, #F0964C);
+    background-image: -moz-linear-gradient(5deg, #F0594C, #F0964C);
+    background-image: linear-gradient(5deg, #F0594C, #F0964C);
+    transition: all 0.7s;
+    z-index: 1;
+    position: relative;
+    &:hover {
+      color: #fff;
+      -ms-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);    
+    }
+}

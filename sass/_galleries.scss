@@ -1,5 +1,13 @@
 /*----------------Slick Gallery-----------------*/
 
+.slick {
+    direction: ltr;
+}
+
+.slick-slider {
+    margin-bottom: 20px;
+}
+
 .slick-arrow, .slick-down {
     height: 65px;
     width: 65px;
@@ -15,7 +23,7 @@
     background-position: 0 -65px;
 }
 
-.slick-arrow.slick-next::before {
+.slick-next::before {
     background-position: -65px -65px;
 }
 

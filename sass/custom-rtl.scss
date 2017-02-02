@@ -1,0 +1,113 @@
+@import 'functions';
+
+/*------------Admin Menu RTL Fix---------*/
+
+#admin-menu .dropdown li ul {
+  right: auto;
+}
+#admin-menu .dropdown li li.expandable ul {
+margin: -20px 160px 0 0 !important;
+}
+
+/*--------------------Global---------------------*/
+
+html {
+    font-family: Alef, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/*--------------------Layout------------------*/
+
+.region-content-inner {
+  padding: 0 var(--side-padding) 0 0;
+}
+
+/*-------------------Header-----------------*/
+
+header {
+    .region-header-second {
+        padding: 0 0 0 var(--side-padding);
+    }
+    .region-header-first{
+        padding: 0 var(--side-padding) 0 0;
+    }
+}
+
+.region-blockgroup-header-panel-inner > div {
+    margin: 0 20px 0 0;
+}
+
+#block-search-form {   
+    #edit-search-block-form--2 {
+        right: auto;
+        left: 0;
+    }
+    .form-actions input {
+        left: auto;
+        right: 0;
+    }
+}
+
+/*------------------Main-------------------*/
+
+.region-content, .region-content-info {
+    padding: 0 0 0 var(--side-padding);
+}
+
+/*---------------Navigation-----------------*/
+
+.region-content-menu-inner {
+    padding: 0 var(--side-padding) 0 0;
+}
+
+/*------------------Footer--------------*/
+
+.region-footer-first-inner {
+    direction: ltr;
+}
+
+/*----------------Teasers------------------*/
+
+/*------Main Teasers------*/
+
+.teaser-row {
+    .teaser-info {
+        padding: 0 20px 0 0;
+    }
+}
+
+/*------Small Teasers Thumbnails Preview------*/
+
+.small-thumbs-row {
+    margin: 0 0 10px 15px;
+}
+
+/*------------------Galleries--------------*/
+
+/*--------masonry-----------*/
+
+.masonry-item > div {
+    margin: 0 0 30px 30px;
+}
+
+/*--------slick-------------*/
+
+[dir='rtl'] .slick-prev:before {
+    content: '';
+    background-position: -65px -65px;
+}
+
+[dir='rtl'] .slick-next:before {
+    content: '';
+    background-position: 0 -65px;
+}
+
+[dir='rtl'] .slick-prev {
+    right: 0;
+}
+
+[dir='rtl'] .slick-next {
+    left: 0;
+}
+
+/*-----------*/

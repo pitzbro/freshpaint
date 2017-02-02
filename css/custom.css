@@ -2395,9 +2395,38 @@ textarea {
 .full-height {
   height: 100%; }
 
+a.round-button {
+  border-radius: 50%;
+  color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  line-height: 18px;
+  background: #EE944B;
+  font-size: 16px;
+  font-family: Alef_Bold;
+  width: 98px;
+  height: 98px;
+  -ms-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  transform: rotate(5deg);
+  background-image: -webkit-linear-gradient(5deg, #F0594C, #F0964C);
+  background-image: -o-linear-gradient(5deg, #F0594C, #F0964C);
+  background-image: -moz-linear-gradient(5deg, #F0594C, #F0964C);
+  background-image: linear-gradient(5deg, #F0594C, #F0964C);
+  transition: all 0.7s;
+  z-index: 1;
+  position: relative; }
+  a.round-button:hover {
+    color: #fff;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg); }
+
 /*----------  Alef Font  ----------*/
 @font-face {
-  font-family: 'Alef';
+  font-family: 'Alef_Bold';
   src: url("../fonts/Alef-Bold.eot");
   src: url("../fonts/Alef-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Alef-Bold.woff") format("woff"), url("../fonts/Alef-Bold.ttf") format("truetype"), url("../fonts/Alef-Bold.svg#alefbold") format("svg");
   font-weight: bold;
@@ -2498,7 +2527,7 @@ h2 {
   margin-bottom: 20px;
   font-weight: normal; }
 
-h3 {
+h3, h2.block-title {
   border-top: solid 1px #231f20;
   border-bottom: solid 1px #231f20;
   line-height: 25px;
@@ -2506,6 +2535,9 @@ h3 {
   font-size: 1.125rem;
   margin-bottom: 15px;
   font-weight: normal; }
+
+h2.block-title {
+  font-size: 0.9rem; }
 
 h4 {
   font-size: 1rem;
@@ -2554,6 +2586,12 @@ fieldset {
     }
 }*/
 /*----------------Slick Gallery-----------------*/
+.slick {
+  direction: ltr; }
+
+.slick-slider {
+  margin-bottom: 20px; }
+
 .slick-arrow, .slick-down {
   height: 65px;
   width: 65px; }
@@ -2566,7 +2604,7 @@ fieldset {
   background: url(../images/gallery-arrows-sprite.png);
   background-position: 0 -65px; }
 
-.slick-arrow.slick-next::before {
+.slick-next::before {
   background-position: -65px -65px; }
 
 /*-----------------Scrolling Gallery--------------------*/
@@ -2585,17 +2623,17 @@ fieldset {
     margin: 0 30px 30px 0; }
 
 /*-----------------Main Teasers Preview-----------------------*/
-.main-teaser-view {
+.teaser-row {
   width: 100%;
   font-size: var(--font-small);
   line-height: var(--line-height-small);
   color: var(--light-color) !important;
   margin-bottom: 30px; }
-  .main-teaser-view .teaser-image {
+  .teaser-row .teaser-image {
     width: 170px; }
-  .main-teaser-view .teaser-info {
+  .teaser-row .teaser-info {
     width: calc(100% - 150px);
-    padding-left: 20px;
+    padding: 0 0 0 20px;
     max-width: 470px; }
 
 /*-----------------Small Teasers Thumbnails Preview-----------------------*/
@@ -2628,7 +2666,7 @@ a#main-content {
   display: none; }
 
 .region-content, .region-content-info {
-  padding-right: var(--side-padding);
+  padding: 0 var(--side-padding) 0 0;
   font-size: 0.875rem;
   line-height: 1.5rem;
   margin-bottom: 40px; }
@@ -2644,12 +2682,15 @@ a#main-content {
     max-width: 600px;
     margin-bottom: 1em; }
 
+.main-text {
+  margin-bottom: 40px; }
+
 .region-content-menu-inner {
   padding: 0 0 0 var(--side-padding); }
 
 .region-content-menu {
   color: var(--light-color); }
-  .region-content-menu .content {
+  .region-content-menu .block-menu {
     border-top: 1px solid #4b4b4b; }
 
 ul.menu li.leaf, ul.menu li.collapsed, ul.menu li.expanded {
@@ -2692,7 +2733,7 @@ ul.menu a {
   line-height: 60px;
   color: #939393;
   font-size: 10px;
-  text-align: right; }
+  text-align: end; }
   .region-footer-first-inner a {
     color: #000; }
     .region-footer-first-inner a:hover {
@@ -2716,13 +2757,13 @@ header {
   header .region-header-second {
     font-size: var(--font-small);
     color: var(--light-color);
-    padding-right: var(--side-padding);
+    padding: 0 var(--side-padding) 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 90px; }
   header .region-header-first {
-    padding-left: var(--side-padding); }
+    padding: 0 0 0 var(--side-padding); }
 
 .social-links-list {
   font-size: 1.125rem;
