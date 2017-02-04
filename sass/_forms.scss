@@ -1,31 +1,30 @@
-/*::-webkit-input-placeholder {
+::-webkit-input-placeholder {
   color: #626262;
   font-size: rem(14px);
   font-family: var(--primary-font);
 }
 
-.form-control {
+input[type="text"], input[type="email"], textarea {
   border: none;
-  border-bottom: 1px solid #000;
-  background-color: transparent;
+  background: #e3e3e0;
   width: 100%;
-  padding: 0.5em 0.2em;
+  padding: 18px 14px;
+  font-size: rem(14px);
+  line-height: rem(22px);
 }
 
-.form-group {
-  margin: 1em 0;
+.region-content input[type="submit"] {
+  display: inline-block;
+  border: none;
+  background: var(--curr-bg-color);
+  color: #fff;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  text-shadow: none;
+  font-family: var(--primary-font);
+  font-size: rem(14px);
+  font-weight: normal; 
 }
-
-.contact-form__sumbit-button{
-  width: 90px;
-  height: 37px;
-  background : var(--active-color);
-}
-
-.contact .container {
-  @include for-mobile-only {  
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-}*/

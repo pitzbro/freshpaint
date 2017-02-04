@@ -12,7 +12,7 @@ margin: -20px 160px 0 0 !important;
 /*--------------------Global---------------------*/
 
 html {
-    font-family: Alef, Arial, Helvetica, sans-serif;
+    font-family: var(--hebrew-font), Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
 
@@ -60,6 +60,12 @@ header {
     padding: 0 var(--side-padding) 0 0;
 }
 
+/*---------------Info-----------------*/
+
+.winner a:before {
+  content: "זוכה פרס ";
+}
+
 /*------------------Footer--------------*/
 
 .region-footer-first-inner {
@@ -80,6 +86,12 @@ header {
 
 .small-thumbs-row {
     margin: 0 0 10px 15px;
+}
+
+/*------------------Forms--------------*/
+
+::-webkit-input-placeholder, .region-content input[type="submit"], input[type="text"], input[type="email"], textarea {
+    font-family: var(--hebrew-font); 
 }
 
 /*------------------Galleries--------------*/
@@ -110,4 +122,21 @@ header {
     left: 0;
 }
 
-/*-----------*/
+/*---------------Pagers-------------------*/
+
+/*--------custome pagers-------------*/
+
+
+ul.custom-pager .previous a:after {
+  left: auto;
+  right: 0;
+}
+
+ul.custom-pager .next a:after {
+  left: auto;
+  right: 50px;
+}
+
+.region-content-info ul.custom-pager a:hover {
+  color: #000;
+}

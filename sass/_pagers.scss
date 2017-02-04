@@ -1,0 +1,40 @@
+/*----------------custome pagers--------------------*/
+
+.block-custom-pagers .content {
+  position: relative;
+  font-family: var(--number-font);
+  font-size: rem(80px);
+}
+
+ul.custom-pager li.key {
+  display: none;
+}
+
+ul.custom-pager a:after {
+  display: inline-block;
+  position: absolute;
+  width: 50px;
+  line-height: 50px;
+  height: 60px;
+  top: 0;
+  text-align: center;
+}
+
+ul.custom-pager a {
+  width: 0;
+  overflow: hidden;
+}
+
+ul.custom-pager .previous a:after {
+  content: "‹";
+  left: 0;
+}
+
+ul.custom-pager .next a:after {
+  content: "›";
+  left: 50px;
+}
+
+.region-content-info ul.custom-pager a:hover {
+  color: #000;
+}
