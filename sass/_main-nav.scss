@@ -1,5 +1,10 @@
 .region-content-menu-inner {
     padding: 0 0 0 var(--side-padding);
+    @include for-mobile-layout {
+      > *:not(.main-menu) {
+          display: none;
+      }
+    }
 }
 .region-content-menu {
     color: var(--light-color);

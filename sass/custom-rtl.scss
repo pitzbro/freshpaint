@@ -22,14 +22,39 @@ html {
   padding: 0 var(--side-padding) 0 0;
 }
 
+@include for-narrow-layout {
+  .container-12 .grid-2.region-content-menu {
+      margin: 0 10px 0 0;
+  }
+
+  .container-12 .grid-7.region-content, .container-12 .grid-10.region-content {
+      margin: 0 0 0 10px;
+  }
+}
+
+@include for-mobile-layout {
+  .container-12 .grid-2.region-content-menu {
+      margin: 0 10px;
+  }
+  .container-12 .grid-7.region-content, .container-12 .grid-10.region-content {
+      margin: 0 10px; 
+  }
+}
+
 /*-------------------Header-----------------*/
 
 header {
     .region-header-second {
         padding: 0 0 0 var(--side-padding);
+        @include for-mobile-layout {
+            padding: 0;
+        }
     }
     .region-header-first{
         padding: 0 var(--side-padding) 0 0;
+        @include for-mobile-layout {
+            padding: 0;
+        }
     }
 }
 
@@ -52,6 +77,9 @@ header {
 
 .region-content, .region-content-info {
     padding: 0 0 0 var(--side-padding);
+    @include for-mobile-layout {
+        padding: 0;
+    }
 }
 
 /*---------------Navigation-----------------*/
@@ -86,6 +114,9 @@ header {
 
 .small-thumbs-row {
     margin: 0 0 10px 15px;
+    @include for-mobile-layout {
+        margin: 0 5px 10px 5px;
+    }
 }
 
 /*------------------Forms--------------*/
@@ -130,11 +161,19 @@ header {
 ul.custom-pager .previous a:after {
   left: auto;
   right: 0;
+@include for-mobile-layout {
+    right: 50%;
+    margin: 0 -50px 0 0 ;
+  }
 }
 
 ul.custom-pager .next a:after {
   left: auto;
   right: 50px;
+@include for-mobile-layout {
+    right: 50%;
+    margin: 0;
+  }
 }
 
 .region-content-info ul.custom-pager a:hover {

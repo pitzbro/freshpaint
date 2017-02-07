@@ -8,12 +8,26 @@
     margin-bottom: 30px;
     .teaser-image {
         width: 170px;
+        margin-bottom: 20px;
+        @include for-mobile-layout {
+            width: 100%;
+        }
     }
     .teaser-info {
         width: calc(100% - 150px);
         padding: 0 0 0 20px;
         max-width: 470px;
+        @include for-mobile-layout {
+            width: 100%;
+            max-width: 100%;
+        }
     }
+}
+
+.main-teaser-view {
+    @include for-mobile-layout {
+        flex-direction: column;
+    }   
 }
 
 /*-----------------Small Teasers Thumbnails Preview-----------------------*/
@@ -21,6 +35,13 @@
 .small-thumbs-block > .view-content {
     width: 755px;
     margin-bottom: 30px;
+    @include for-narrow-layout {
+        width: 540px;
+    }
+    @include for-mobile-layout {
+        width: 100%;
+        justify-content: space-around;
+    }
 }
 
 .small-thumbs-row {
@@ -36,8 +57,6 @@
 
         filter: grayscale(0%);
     }
- 
-
     .image-text-block {
         padding-top: 10px;
         font-size: var(--font-small);
@@ -47,5 +66,8 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         width: 136px;
+    }
+    @include for-mobile-layout {
+        margin: 0 5px 10px 5px;
     }
 }

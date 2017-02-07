@@ -2,28 +2,6 @@ a#main-content {
     display: none;
 }
 
-.region-content, .region-content-info {
-    padding: 0 var(--side-padding) 0 0;
-    font-size: rem(14px);
-    line-height: rem(24px);
-    margin-bottom: 40px;
-    img {
-        border: 0;
-        height: auto;
-        max-width: 100%;
-    }
-    a {
-        color: var(--curr-text-color);
-          &:hover {
-            text-decoration: underline;
-        }
-    }
-    p {
-        max-width: 600px;
-        margin-bottom: 1em;
-    }
-}
-
 .main-text {
     margin-bottom: 40px;
 }

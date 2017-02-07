@@ -13,6 +13,10 @@ header {
     }
     .header-logo {
         width: 160px;
+
+        @include for-narrow-layout {
+            width: 120px;
+        }
     }
     .header-date {
         font-family: var(--number-font);
@@ -27,10 +31,16 @@ header {
         flex-direction: column;
         justify-content: space-around;
         height: 90px;
+        @include for-mobile-layout {
+            padding: 0;
+        }
 
     }
     .region-header-first{
         padding: 0 0 0 var(--side-padding);
+        @include for-mobile-layout {
+            padding: 0;
+        }
     }
 }
 

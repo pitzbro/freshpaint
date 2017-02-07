@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Breakpoint mixins */
 /*------------Admin Menu RTL Fix---------*/
 #admin-menu .dropdown li ul {
   right: auto; }
@@ -15,12 +16,30 @@ html {
 .region-content-inner {
   padding: 0 var(--side-padding) 0 0; }
 
+@media (max-width: 980px) {
+  .container-12 .grid-2.region-content-menu {
+    margin: 0 10px 0 0; }
+  .container-12 .grid-7.region-content, .container-12 .grid-10.region-content {
+    margin: 0 0 0 10px; } }
+
+@media (max-width: 740px) {
+  .container-12 .grid-2.region-content-menu {
+    margin: 0 10px; }
+  .container-12 .grid-7.region-content, .container-12 .grid-10.region-content {
+    margin: 0 10px; } }
+
 /*-------------------Header-----------------*/
 header .region-header-second {
   padding: 0 0 0 var(--side-padding); }
+  @media (max-width: 740px) {
+    header .region-header-second {
+      padding: 0; } }
 
 header .region-header-first {
   padding: 0 var(--side-padding) 0 0; }
+  @media (max-width: 740px) {
+    header .region-header-first {
+      padding: 0; } }
 
 .region-blockgroup-header-panel-inner > div {
   margin: 0 20px 0 0; }
@@ -36,6 +55,9 @@ header .region-header-first {
 /*------------------Main-------------------*/
 .region-content, .region-content-info {
   padding: 0 0 0 var(--side-padding); }
+  @media (max-width: 740px) {
+    .region-content, .region-content-info {
+      padding: 0; } }
 
 /*---------------Navigation-----------------*/
 .region-content-menu-inner {
@@ -57,6 +79,9 @@ header .region-header-first {
 /*------Small Teasers Thumbnails Preview------*/
 .small-thumbs-row {
   margin: 0 0 10px 15px; }
+  @media (max-width: 740px) {
+    .small-thumbs-row {
+      margin: 0 5px 10px 5px; } }
 
 /*------------------Forms--------------*/
 ::-webkit-input-placeholder, .region-content input[type="submit"], input[type="text"], input[type="email"], textarea {
@@ -87,10 +112,18 @@ header .region-header-first {
 ul.custom-pager .previous a:after {
   left: auto;
   right: 0; }
+  @media (max-width: 740px) {
+    ul.custom-pager .previous a:after {
+      right: 50%;
+      margin: 0 -50px 0 0; } }
 
 ul.custom-pager .next a:after {
   left: auto;
   right: 50px; }
+  @media (max-width: 740px) {
+    ul.custom-pager .next a:after {
+      right: 50%;
+      margin: 0; } }
 
 .region-content-info ul.custom-pager a:hover {
   color: #000; }

@@ -13,4 +13,7 @@
             color: var(--curr-text-color);
         }
     }
+    @include for-mobile-layout {
+        text-align: center;
+    }
 }

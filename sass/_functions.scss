@@ -1,3 +1,29 @@
+$container-width: 960px;
+$mobile-breakpoint: 740px;
+$narrow-breakpoint: 980px;
+
+/* Breakpoint mixins */
+
+@mixin for-mobile-layout {
+  @media (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin for-narrow-layout {
+  @media (max-width: $narrow-breakpoint) {
+    @content;
+  }
+}
+
+@mixin for-normal-layout {
+  @media (max-width: $normal-breakpoint) {
+    @content;
+  }
+}
+
+
+
 @function rem($size) {
   $remSize: $size / 16px;
   @return ($remSize) * 1rem;

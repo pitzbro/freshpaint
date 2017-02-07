@@ -4,7 +4,7 @@
   font-family: var(--primary-font);
 }
 
-input[type="text"], input[type="email"], textarea {
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="number"], textarea {
   border: none;
   background: #e3e3e0;
   width: 100%;
@@ -21,10 +21,35 @@ input[type="text"], input[type="email"], textarea {
   border-radius: 50%;
   width: 70px;
   height: 70px;
-  line-height: 70px;
+  // line-height: 70px;
   text-align: center;
   text-shadow: none;
   font-family: var(--primary-font);
   font-size: rem(14px);
-  font-weight: normal; 
+  font-weight: normal;
+  transition: background 0.5s;
+  &:hover {
+    background: lighten($curr-bg-color, 15%);
+  }
+}
+
+.form-bordered {
+    border-bottom: solid 1px #000;
+    border-top: solid 1px #000;
+    padding-bottom: 20px;
+}
+
+.disabled-row {
+  background: #fdfaa0;
+  margin: 14px 0;
+  padding: 7px 14px;
+  color: var(--light-color);
+
+  input[type="text"] {
+    width: auto;
+    color: #000;
+    background: transparent;
+    color: var(--light-color);
+    padding: 5px;
+  }
 }

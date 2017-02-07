@@ -28,11 +28,18 @@ ul.custom-pager a {
 ul.custom-pager .previous a:after {
   content: "‹";
   left: 0;
+  @include for-mobile-layout {
+    left: 50%;
+    margin: 0 0 0 -50px;
+  }
 }
 
 ul.custom-pager .next a:after {
   content: "›";
   left: 50px;
+  @include for-mobile-layout {
+    left: 50%;
+  }
 }
 
 .region-content-info ul.custom-pager a:hover {
