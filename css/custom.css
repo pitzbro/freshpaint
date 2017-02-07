@@ -2832,6 +2832,25 @@ ul.menu a {
   ul.menu a:hover {
     background-color: #e3e3e0; }
 
+/*---------------Responsive Mean Menu-----------------*/
+.mean-container .mean-bar {
+  position: fixed; }
+
+.mean-container .mean-bar .mean-nav {
+  width: 0;
+  background: red;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: width ease-out 0.8s; }
+  .mean-container .mean-bar .mean-nav::-webkit-scrollbar {
+    display: none; }
+
+.mean-container .mean-bar .mean-nav.open {
+  width: 80%; }
+
 .region-footer-first-inner {
   border-top: solid 2px #4b4b4b;
   margin: 0 var(--side-padding);
