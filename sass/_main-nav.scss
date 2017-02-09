@@ -61,12 +61,18 @@ ul.menu {
 
 .mean-container .mean-bar {
     position: fixed;
+    z-index: 200;
+    background: #fff;
+    border-bottom: solid 1px #000;
+    font-size: rem(14px);
 }
 
 .mean-container .mean-bar .mean-nav {
     width: 0;
-    background: red;
-    top: 0;
+    background: white;
+    border-right: solid 1px #000;
+    top: 51px;
+    margin: 0;
     bottom: 0;
     position: fixed;
     overflow-y: scroll;
@@ -74,6 +80,31 @@ ul.menu {
     transition: width ease-out 0.8s;
     &::-webkit-scrollbar { 
         display: none; 
+    }
+    ul {
+        li {
+            a {
+                border-bottom: solid 1px #000;
+                color: var(--light-color);
+                text-align: start;
+                &.mean-expand {
+                    height: 24px;
+                    top: -1px;
+                    text-align: center;
+                    &:hover {
+                        background: transparent;
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mean-container a.meanmenu-reveal {
+    color: var(--light-color);
+    span {
+        background: var(--light-color);
     }
 }
 

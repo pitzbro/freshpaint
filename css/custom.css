@@ -2678,6 +2678,9 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
   border: none;
   margin: 0;
   padding: 0; }
+  @media (max-width: 980px) {
+    .masonry-item {
+      width: 50%; } }
   .masonry-item > div {
     margin: 0 30px 30px 0; }
 
@@ -2834,12 +2837,18 @@ ul.menu a {
 
 /*---------------Responsive Mean Menu-----------------*/
 .mean-container .mean-bar {
-  position: fixed; }
+  position: fixed;
+  z-index: 200;
+  background: #fff;
+  border-bottom: solid 1px #000;
+  font-size: 0.875rem; }
 
 .mean-container .mean-bar .mean-nav {
   width: 0;
-  background: red;
-  top: 0;
+  background: white;
+  border-right: solid 1px #000;
+  top: 51px;
+  margin: 0;
   bottom: 0;
   position: fixed;
   overflow-y: scroll;
@@ -2847,6 +2856,22 @@ ul.menu a {
   transition: width ease-out 0.8s; }
   .mean-container .mean-bar .mean-nav::-webkit-scrollbar {
     display: none; }
+  .mean-container .mean-bar .mean-nav ul li a {
+    border-bottom: solid 1px #000;
+    color: var(--light-color);
+    text-align: start; }
+    .mean-container .mean-bar .mean-nav ul li a.mean-expand {
+      height: 24px;
+      top: -1px;
+      text-align: center; }
+      .mean-container .mean-bar .mean-nav ul li a.mean-expand:hover {
+        background: transparent;
+        color: #000; }
+
+.mean-container a.meanmenu-reveal {
+  color: var(--light-color); }
+  .mean-container a.meanmenu-reveal span {
+    background: var(--light-color); }
 
 .mean-container .mean-bar .mean-nav.open {
   width: 80%; }
@@ -2872,8 +2897,14 @@ header {
   height: var(--header-height);
   overflow: hidden;
   font-size: var(--font-small); }
+  @media (max-width: 740px) {
+    header {
+      height: auto; } }
   header .zone-header {
     padding: 20px 0; }
+    @media (max-width: 740px) {
+      header .zone-header {
+        padding: 51px 0 5px 0; } }
   header .fresh-paint-header .views-row-last {
     display: flex;
     align-items: center; }
@@ -2901,10 +2932,22 @@ header {
     padding: 0 0 0 var(--side-padding); }
     @media (max-width: 740px) {
       header .region-header-first {
-        padding: 0; } }
+        position: fixed;
+        z-index: 300;
+        height: 50px;
+        top: 0;
+        padding: 0; }
+        header .region-header-first .header-date {
+          font-size: 1.5625rem; }
+        header .region-header-first .header-logo {
+          width: initial; }
+          header .region-header-first .header-logo img {
+            height: 44px;
+            width: auto;
+            margin: 0 15px 0 0; } }
 
 .social-links-list {
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   margin-bottom: 16px; }
   .social-links-list li {
     margin-left: 5px; }

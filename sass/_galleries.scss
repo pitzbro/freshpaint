@@ -38,6 +38,12 @@
 
 .masonry-item {
     width: 33.333%;
+    @include for-narrow-layout {
+        width: 50%;
+    }
+    // @include for-mobile-layout {
+    //     width: 100%;
+    // }
     background-color: transparent;
     border: none;
     margin: 0;

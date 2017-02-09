@@ -54,6 +54,9 @@ header {
         padding: 0 var(--side-padding) 0 0;
         @include for-mobile-layout {
             padding: 0;
+            .header-logo img {
+                margin: 0 0 0 15px;
+            }
         }
     }
 }
@@ -86,6 +89,23 @@ header {
 
 .region-content-menu-inner {
     padding: 0 var(--side-padding) 0 0;
+}
+
+/*---------------Responsive Mean Menu-----------------*/
+
+.mean-container a.meanmenu-reveal {
+    right: auto !important; 
+    left: 0 !important;
+}
+
+.mean-container .mean-bar .mean-nav {
+    border-right: none;
+    border-left: 1px solid #000;
+    right: -1px;
+    ul li a.mean-expand {
+        right: auto;
+        left: 0;
+    }
 }
 
 /*---------------Info-----------------*/

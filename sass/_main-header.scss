@@ -4,8 +4,15 @@ header {
     overflow: hidden;
     font-size: var(--font-small);
 
+    @include for-mobile-layout {
+        height: auto;
+    }
+
     .zone-header {
         padding: 20px 0;
+        @include for-mobile-layout {
+            padding: 51px 0 5px 0;
+        }
     }
     .fresh-paint-header .views-row-last {
         display: flex;
@@ -39,13 +46,28 @@ header {
     .region-header-first{
         padding: 0 0 0 var(--side-padding);
         @include for-mobile-layout {
+            position: fixed;
+            z-index: 300;
+            height: 50px;
+            top: 0;
             padding: 0;
+            .header-date {
+                font-size: rem(25px);
+            }
+            .header-logo {
+                width: initial;
+                img {
+                    height: 44px;
+                    width: auto;
+                    margin: 0 15px 0 0;
+                }
+            }
         }
     }
 }
 
 .social-links-list {
-    font-size: rem(18px);
+    font-size: rem(20px);
     margin-bottom: 16px;
     li {
         margin-left: 5px;
