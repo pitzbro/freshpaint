@@ -54,19 +54,19 @@ function fresh_paint_omega_form_alter(&$form, &$form_state, $form_id) {
 
  /*-------------Changing the Viewport (for mobile and tablet)-----------*/
 
-function fresh_paint_omega_page_alter($page) {
-// 
-$viewport = array(
-'#type' => 'html_tag',
-'#tag' => 'meta',
-'#attributes' => array(
-'name' =>  'viewport',
-'content' =>  'width=1024'
-)
-);
-drupal_add_html_head($viewport, 'viewport');
-}
+// function fresh_paint_omega_page_alter($page) {
+// // 
+// $viewport = array(
+// '#type' => 'html_tag',
+// '#tag' => 'meta',
+// '#attributes' => array(
+// 'name' =>  'viewport',
+// 'content' =>  'width=1024'
+// )
+// );
+// drupal_add_html_head($viewport, 'viewport');
+// }
 
-?>
+// ?>
 
 

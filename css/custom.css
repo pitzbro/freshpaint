@@ -2691,6 +2691,9 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
   line-height: var(--line-height-small);
   color: var(--light-color) !important;
   margin-bottom: 30px; }
+  @media (max-width: 740px) {
+    .teaser-row {
+      text-align: center; } }
   .teaser-row .teaser-image {
     width: 170px;
     margin-bottom: 20px; }
@@ -2704,7 +2707,8 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
     @media (max-width: 740px) {
       .teaser-row .teaser-info {
         width: 100%;
-        max-width: 100%; } }
+        max-width: 100%;
+        padding: 0; } }
 
 @media (max-width: 740px) {
   .main-teaser-view {
@@ -2873,7 +2877,7 @@ ul.menu a {
   .mean-container a.meanmenu-reveal span {
     background: var(--light-color); }
 
-.mean-container .mean-bar .mean-nav.open {
+.mean-container.mean-menu-open .mean-bar .mean-nav {
   width: 80%; }
 
 .region-footer-first-inner {

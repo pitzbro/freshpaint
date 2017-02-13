@@ -6,6 +6,9 @@
     line-height: var(--line-height-small);
     color: var(--light-color) !important;
     margin-bottom: 30px;
+    @include for-mobile-layout {
+        text-align: center;
+    }
     .teaser-image {
         width: 170px;
         margin-bottom: 20px;
@@ -20,6 +23,7 @@
         @include for-mobile-layout {
             width: 100%;
             max-width: 100%;
+            padding: 0;
         }
     }
 }
