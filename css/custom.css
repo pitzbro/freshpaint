@@ -2390,6 +2390,9 @@ textarea {
 
 .space-between, .flex-view.space-between .view-content {
   justify-content: space-between; }
+  @media (max-width: 740px) {
+    .space-between, .flex-view.space-between .view-content {
+      justify-content: space-around; } }
 
 .flex-wrap, .flex-view.flex-wrap .view-content {
   flex-wrap: wrap; }
@@ -2624,7 +2627,7 @@ fieldset {
 
 ::-webkit-input-placeholder {
   color: #626262;
-  font-size: 0.875rem;
+  font-size: inherit;
   font-family: var(--primary-font); }
 
 input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="number"], textarea {
@@ -2915,9 +2918,11 @@ ul.menu a {
     color: var(--light-color);
     text-align: start; }
     .mean-container .mean-bar .mean-nav ul li a.mean-expand {
-      height: 24px;
-      top: -1px;
-      text-align: center; }
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 12px;
+      text-align: end; }
       .mean-container .mean-bar .mean-nav ul li a.mean-expand:hover {
         background: transparent;
         color: #000; }
@@ -3046,6 +3051,21 @@ header {
     padding: 0;
     font-weight: normal; }
 
+.search-filter .views-exposed-form .views-exposed-widget {
+  padding: 0; }
+
+.search-filter input[type="text"] {
+  height: 25px;
+  font-size: 0.75rem;
+  border-top: 1px solid #d8d7d6;
+  border-bottom: 1px solid #d8d7d6;
+  background: transparent;
+  padding: 0 5px;
+  color: var(--light-color); }
+
+.search-filter .views-submit-button {
+  display: none; }
+
 .newsletter-link-block .newsletter-link {
   display: block;
   width: 104px;
@@ -3060,6 +3080,7 @@ header {
 
 #block-locale-language, #block-block-16, #block-block-15 {
   width: 25px;
+  height: 25px;
   border-top: 1px solid #D8D7D6;
   border-bottom: 1px solid #D8D7D6;
   text-transform: uppercase;

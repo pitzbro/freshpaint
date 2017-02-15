@@ -122,6 +122,24 @@ header {
     }
 }
 
+.search-filter {
+    .views-exposed-form .views-exposed-widget {
+        padding: 0;
+    }
+    input[type="text"] {
+        height: 25px;
+        font-size: rem(12px);
+        border-top: 1px solid #d8d7d6;
+        border-bottom: 1px solid #d8d7d6;
+        background: transparent;
+        padding: 0 5px;
+        color: var(--light-color);
+    }
+    .views-submit-button {
+        display: none;
+    }
+}
+
 .newsletter-link-block {
     .newsletter-link {
         display: block;     
@@ -141,6 +159,7 @@ header {
 
 #block-locale-language, #block-block-16, #block-block-15 {
     width: 25px;
+    height: 25px;
     border-top: 1px solid #D8D7D6;
     border-bottom: 1px solid #D8D7D6;
     text-transform: uppercase;

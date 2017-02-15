@@ -88,9 +88,11 @@ ul.menu {
                 color: var(--light-color);
                 text-align: start;
                 &.mean-expand {
-                    height: 24px;
-                    top: -1px;
-                    text-align: center;
+                    width: 100%;
+                    height: 100%;
+                    box-sizing: border-box;
+                    padding: 12px;
+                    text-align: end;
                     &:hover {
                         background: transparent;
                         color: #000;

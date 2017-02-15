@@ -79,6 +79,9 @@ textarea {
 
 .space-between, .flex-view.space-between .view-content {
   justify-content: space-between;
+  @include for-mobile-layout {
+    justify-content: space-around;
+  }
 }
 
 .flex-wrap, .flex-view.flex-wrap .view-content {
