@@ -2372,6 +2372,9 @@ textarea {
   margin-top: 20px;
   display: block; }
 
+.inline-block {
+  display: inline-block; }
+
 /*----------  Flex Helpers  ----------*/
 .flex, .flex-view .view-content {
   display: flex; }
@@ -2465,6 +2468,7 @@ a.round-button {
   /* Colors */
   --main-color: #000;
   --light-color: #4B4B4B;
+  --active-color: #FF9800;
   --curr-text-color: #ec1c24;
   --curr-bg-color: #ec1c24; }
 
@@ -2589,6 +2593,27 @@ h4 {
 .linked-heading {
   border-color: var(--curr-text-color); }
 
+.colored-heading {
+  line-height: 25px;
+  padding: 5px 0;
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  font-weight: normal;
+  background: var(--active-color);
+  color: #fff;
+  text-align: center; }
+
+.region-content .colored-btn a {
+  background: var(--curr-bg-color);
+  display: inline-block;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  margin-bottom: 20px; }
+  .region-content .colored-btn a:hover {
+    background: #f26368;
+    text-decoration: none; }
+
 ul,
 fieldset {
   padding: 0;
@@ -2624,6 +2649,8 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
   font-size: 0.875rem;
   font-weight: normal;
   transition: background 0.5s; }
+  .region-content input[type="submit"].element-hidden {
+    display: none; }
   .region-content input[type="submit"]:hover {
     background: #f26368; }
 
@@ -2635,14 +2662,34 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
 .disabled-row {
   background: #fdfaa0;
   margin: 14px 0;
-  padding: 7px 14px;
-  color: var(--light-color); }
+  padding: 7px 14px; }
   .disabled-row input[type="text"] {
-    width: auto;
-    color: #000;
     background: transparent;
-    color: var(--light-color);
+    color: #000;
     padding: 5px; }
+
+/*---------------Exposed Form------------------*/
+.region-content .views-exposed-form .views-exposed-widget {
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  float: none; }
+  .region-content .views-exposed-form .views-exposed-widget .form-type-bef-link {
+    display: inline-block;
+    margin: 0px 2px; }
+    .region-content .views-exposed-form .views-exposed-widget .form-type-bef-link a {
+      background: var(--curr-bg-color);
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 50%;
+      color: #fff; }
+      .region-content .views-exposed-form .views-exposed-widget .form-type-bef-link a.active {
+        background: var(--active-color); }
+      .region-content .views-exposed-form .views-exposed-widget .form-type-bef-link a:hover {
+        background: #f26368;
+        text-decoration: none; }
 
 /*----------------Slick Gallery-----------------*/
 .slick {
@@ -2683,6 +2730,9 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
       width: 50%; } }
   .masonry-item > div {
     margin: 0 30px 30px 0; }
+    @media (max-width: 740px) {
+      .masonry-item > div {
+        margin: 0 5px 30px 5px; } }
 
 /*-----------------Main Teasers Preview-----------------------*/
 .teaser-row {
@@ -2895,7 +2945,8 @@ ul.menu a {
       color: var(--curr-text-color); }
   @media (max-width: 740px) {
     .region-footer-first-inner {
-      text-align: center; } }
+      text-align: center;
+      margin: 0; } }
 
 header {
   height: var(--header-height);

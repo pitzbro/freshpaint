@@ -28,6 +28,9 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
   font-size: rem(14px);
   font-weight: normal;
   transition: background 0.5s;
+  &.element-hidden {
+    display: none;
+  }
   &:hover {
     background: lighten($curr-bg-color, 15%);
   }
@@ -43,13 +46,43 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
   background: #fdfaa0;
   margin: 14px 0;
   padding: 7px 14px;
-  color: var(--light-color);
+  // color: var(--light-color);
 
   input[type="text"] {
-    width: auto;
-    color: #000;
+    // display: inline;
+    // width: inherit;
     background: transparent;
-    color: var(--light-color);
+    // color: var(--light-color);
+    color: #000;
     padding: 5px;
+  }
+}
+
+/*---------------Exposed Form------------------*/
+
+.region-content .views-exposed-form .views-exposed-widget {
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  float: none;
+  .form-type-bef-link {
+    display: inline-block;
+    margin: 0px 2px;
+    a {
+      background: var(--curr-bg-color);
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 50%;
+      color: #fff;
+      &.active {
+        background: var(--active-color);
+      }
+      &:hover {
+        background: lighten($curr-bg-color, 15%);
+        text-decoration: none;
+      }
+    }
   }
 }

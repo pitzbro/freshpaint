@@ -86,6 +86,30 @@ h4 {
   border-color: var(--curr-text-color);
 }
 
+.colored-heading {
+    line-height: 25px;
+    padding: 5px 0;
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    font-weight: normal;
+    background: var(--active-color);
+    color: #fff;
+    text-align: center;
+}
+
+.region-content .colored-btn a {
+    background: var(--curr-bg-color);
+    display: inline-block;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    &:hover {
+      background: lighten($curr-bg-color, 15%);
+      text-decoration: none;
+    }
+}
+
 ul,
 fieldset {
   padding: 0;

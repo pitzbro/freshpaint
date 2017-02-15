@@ -15,5 +15,6 @@
     }
     @include for-mobile-layout {
         text-align: center;
+        margin: 0;
     }
 }

@@ -50,5 +50,8 @@
     padding: 0;
     > div {
         margin: 0 30px 30px 0;
+        @include for-mobile-layout {
+            margin: 0 5px 30px 5px;
+        }
     } 
 }
