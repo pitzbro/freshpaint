@@ -1,6 +1,6 @@
 .region-footer-first-inner {
     border-top: solid 2px #4b4b4b;
-    margin: 0 var(--side-padding);
+    margin: 0 $side-padding;
     height: 70px;
     text-align: end;
     line-height: 60px;
@@ -10,7 +10,7 @@
     a {
         color: #000;
         &:hover {
-            color: var(--curr-text-color);
+            color: $curr-text-color;
         }
     }
     @include for-mobile-layout {

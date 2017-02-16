@@ -7,8 +7,8 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 }
 
 html {
-  color: var(--main-color);
-  font-family: var(--primary-font);
+  color: $main-color;
+  font-family: $primary-font;
   // @include for-narrow-layout {
   //   font-size: 14px;
   // }
@@ -25,12 +25,12 @@ body {
 
 ::-moz-selection { /* Code for Firefox */
     color: #fff;
-    background: var(--curr-text-color);
+    background: $curr-text-color;
 }
 
 ::selection {
     color: #fff;
-    background: var(--curr-text-color);
+    background: $curr-text-color;
 }
 
 a {
@@ -83,7 +83,7 @@ h4 {
 }
 
 .linked-heading {
-  border-color: var(--curr-text-color);
+  border-color: $curr-text-color;
 }
 
 .colored-heading {
@@ -92,13 +92,13 @@ h4 {
     font-size: 1.125rem;
     margin-bottom: 10px;
     font-weight: normal;
-    background: var(--active-color);
+    background: $active-color;
     color: #fff;
     text-align: center;
 }
 
 .region-content .colored-btn a {
-    background: var(--curr-bg-color);
+    background: $curr-bg-color;
     display: inline-block;
     color: #fff;
     padding: 5px 10px;

@@ -1,4 +1,5 @@
 @import 'functions';
+@import 'vars';
 
 /*------------Admin Menu RTL Fix---------*/
 
@@ -12,14 +13,14 @@ margin: -20px 160px 0 0 !important;
 /*--------------------Global---------------------*/
 
 html {
-    font-family: var(--hebrew-font), Arial, Helvetica, sans-serif;
+    font-family: $hebrew-font, Arial, Helvetica, sans-serif;
     font-size: 18px;
 }
 
 /*--------------------Layout------------------*/
 
 .region-content-inner {
-  padding: 0 var(--side-padding) 0 0;
+  padding: 0 $side-padding 0 0;
 }
 
 @include for-narrow-layout {
@@ -45,13 +46,13 @@ html {
 
 header {
     .region-header-second {
-        padding: 0 0 0 var(--side-padding);
+        padding: 0 0 0 $side-padding;
         @include for-mobile-layout {
             padding: 0;
         }
     }
     .region-header-first{
-        padding: 0 var(--side-padding) 0 0;
+        padding: 0 $side-padding 0 0;
         @include for-mobile-layout {
             padding: 0;
             .header-logo img {
@@ -79,7 +80,7 @@ header {
 /*------------------Main-------------------*/
 
 .region-content, .region-content-info {
-    padding: 0 0 0 var(--side-padding);
+    padding: 0 0 0 $side-padding;
     @include for-mobile-layout {
         padding: 0;
     }
@@ -88,7 +89,7 @@ header {
 /*---------------Navigation-----------------*/
 
 .region-content-menu-inner {
-    padding: 0 var(--side-padding) 0 0;
+    padding: 0 $side-padding 0 0;
 }
 
 /*---------------Responsive Mean Menu-----------------*/
@@ -142,7 +143,7 @@ header {
 /*------------------Forms--------------*/
 
 ::-webkit-input-placeholder, .region-content input[type="submit"], input[type="text"], input[type="email"], textarea {
-    font-family: var(--hebrew-font); 
+    font-family: $hebrew-font; 
 }
 
 /*------------------Galleries--------------*/

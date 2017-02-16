@@ -1,8 +1,8 @@
 header {
     
-    height: var(--header-height);
+    height: $header-height;
     overflow: hidden;
-    font-size: var(--font-small);
+    font-size: $font-small;
 
     @include for-mobile-layout {
         height: auto;
@@ -26,14 +26,14 @@ header {
         }
     }
     .header-date {
-        font-family: var(--number-font);
+        font-family: $number-font;
         font-size: rem(35px);
-        color: var(--light-color);
+        color: $light-color;
     }
     .region-header-second {
-        font-size: var(--font-small);
-        color: var(--light-color);
-        padding: 0 var(--side-padding) 0 0;
+        font-size: $font-small;
+        color: $light-color;
+        padding: 0 $side-padding 0 0;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -44,7 +44,7 @@ header {
 
     }
     .region-header-first{
-        padding: 0 0 0 var(--side-padding);
+        padding: 0 0 0 $side-padding;
         @include for-mobile-layout {
             position: fixed;
             z-index: 300;
@@ -79,7 +79,7 @@ header {
         }
     }
     a:hover {
-        color: var(--curr-text-color);
+        color: $curr-text-color;
     }
 }
 
@@ -97,7 +97,7 @@ header {
     width: 150px;
     border-top: 1px solid #d8d7d6;
     border-bottom: 1px solid #d8d7d6;
-    color: var(--light-color);
+    color: $light-color;
     
     #edit-search-block-form--2 {
         line-height: 10px;
@@ -133,7 +133,7 @@ header {
         border-bottom: 1px solid #d8d7d6;
         background: transparent;
         padding: 0 5px;
-        color: var(--light-color);
+        color: $light-color;
     }
     .views-submit-button {
         display: none;
@@ -150,7 +150,7 @@ header {
         line-height: 25px;
         text-align: center;
         &:hover {
-            background: var(--curr-bg-color);
+            background: $curr-bg-color;
             color: #fff;
         }
     }

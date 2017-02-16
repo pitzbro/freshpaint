@@ -2,9 +2,9 @@
 
 .teaser-row {
     width: 100%;
-    font-size: var(--font-small);
-    line-height: var(--line-height-small);
-    color: var(--light-color) !important;
+    font-size: $font-small;
+    line-height: $line-height-small;
+    color: $light-color !important;
     margin-bottom: 30px;
     @include for-mobile-layout {
         text-align: center;
@@ -52,10 +52,10 @@
     width: 136px;
     margin: 0 15px 10px 0;
     filter: grayscale(100%);
-    color: var(--light-color) !important;
+    color: $light-color !important;
     &:hover {
         a {
-        color: var(--curr-text-color) !important;
+        color: $curr-text-color !important;
         text-decoration: none !important;
         }
 
@@ -63,8 +63,8 @@
     }
     .image-text-block {
         padding-top: 10px;
-        font-size: var(--font-small);
-        line-height: var(--line-height-small);
+        font-size: $font-small;
+        line-height: $line-height-small;
         display: block;
         overflow: hidden;
         text-overflow: ellipsis;

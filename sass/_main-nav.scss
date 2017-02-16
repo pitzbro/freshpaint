@@ -1,5 +1,5 @@
 .region-content-menu-inner {
-    padding: 0 0 0 var(--side-padding);
+    padding: 0 0 0 $side-padding;
     @include for-mobile-layout {
       > *:not(.main-menu) {
           display: none;
@@ -7,7 +7,7 @@
     }
 }
 .region-content-menu {
-    color: var(--light-color);
+    color: $light-color;
     .block-menu {
         border-top: 1px solid #4b4b4b
     }
@@ -85,7 +85,7 @@ ul.menu {
         li {
             a {
                 border-bottom: solid 1px #000;
-                color: var(--light-color);
+                color: $light-color;
                 text-align: start;
                 &.mean-expand {
                     width: 100%;
@@ -106,9 +106,9 @@ ul.menu {
 }
 
 .mean-container a.meanmenu-reveal {
-    color: var(--light-color);
+    color: $light-color;
     span {
-        background: var(--light-color);
+        background: $light-color;
     }
 }
 

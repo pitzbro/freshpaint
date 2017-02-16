@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /* Breakpoint mixins */
+/* Layout */
+/* Fonts */
+/* Colors */
 /*------------Admin Menu RTL Fix---------*/
 #admin-menu .dropdown li ul {
   right: auto; }
@@ -9,12 +12,12 @@
 
 /*--------------------Global---------------------*/
 html {
-  font-family: var(--hebrew-font), Arial, Helvetica, sans-serif;
+  font-family: Alef, Arial, Helvetica, sans-serif;
   font-size: 18px; }
 
 /*--------------------Layout------------------*/
 .region-content-inner {
-  padding: 0 var(--side-padding) 0 0; }
+  padding: 0 1.25em 0 0; }
 
 @media (max-width: 980px) {
   .container-12 .grid-2.region-content-menu {
@@ -30,13 +33,13 @@ html {
 
 /*-------------------Header-----------------*/
 header .region-header-second {
-  padding: 0 0 0 var(--side-padding); }
+  padding: 0 0 0 1.25em; }
   @media (max-width: 740px) {
     header .region-header-second {
       padding: 0; } }
 
 header .region-header-first {
-  padding: 0 var(--side-padding) 0 0; }
+  padding: 0 1.25em 0 0; }
   @media (max-width: 740px) {
     header .region-header-first {
       padding: 0; }
@@ -56,14 +59,14 @@ header .region-header-first {
 
 /*------------------Main-------------------*/
 .region-content, .region-content-info {
-  padding: 0 0 0 var(--side-padding); }
+  padding: 0 0 0 1.25em; }
   @media (max-width: 740px) {
     .region-content, .region-content-info {
       padding: 0; } }
 
 /*---------------Navigation-----------------*/
 .region-content-menu-inner {
-  padding: 0 var(--side-padding) 0 0; }
+  padding: 0 1.25em 0 0; }
 
 /*---------------Responsive Mean Menu-----------------*/
 .mean-container a.meanmenu-reveal {
@@ -100,7 +103,7 @@ header .region-header-first {
 
 /*------------------Forms--------------*/
 ::-webkit-input-placeholder, .region-content input[type="submit"], input[type="text"], input[type="email"], textarea {
-  font-family: var(--hebrew-font); }
+  font-family: Alef; }
 
 /*------------------Galleries--------------*/
 /*--------masonry-----------*/
