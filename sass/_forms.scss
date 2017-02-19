@@ -68,6 +68,9 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
   .form-type-bef-link {
     display: inline-block;
     margin: 0px 2px;
+    &.form-item-edit-field-salon-date-value-selective- {
+      display: none;
+    }
     a {
       background: $curr-bg-color;
       width: 40px;

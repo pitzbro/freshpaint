@@ -2664,6 +2664,8 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
   .region-content .views-exposed-form .views-exposed-widget .form-type-bef-link {
     display: inline-block;
     margin: 0px 2px; }
+    .region-content .views-exposed-form .views-exposed-widget .form-type-bef-link.form-item-edit-field-salon-date-value-selective- {
+      display: none; }
     .region-content .views-exposed-form .views-exposed-widget .form-type-bef-link a {
       background: #ec1c24;
       width: 40px;
