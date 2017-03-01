@@ -17,6 +17,9 @@ ul.menu {
     li.leaf, li.collapsed, li.expanded {
         list-style-image: none;
         list-style-type: none;
+        &.last {
+            border-color: #4b4b4b;
+        }
     }
 
     li {
@@ -28,6 +31,10 @@ ul.menu {
         font-weight: bold;
         &.active-trail > a {
             background-color: #e3e3e0;
+        }
+        &.menu-seperator {
+            border-top: 1px solid #4b4b4b;
+            margin-top: 30px;
         }
         li {
             padding: 2px 0;
@@ -115,4 +122,3 @@ ul.menu {
 .mean-container.mean-menu-open .mean-bar .mean-nav {
     width: 80%;
 }
-

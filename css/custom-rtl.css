@@ -148,3 +148,7 @@ ul.custom-pager .next a:after {
 
 .region-content-info ul.custom-pager a:hover {
   color: #000; }
+
+/*---------------Helpers-------------------*/
+.logo-item {
+  margin: 0 0 10px 10px; }

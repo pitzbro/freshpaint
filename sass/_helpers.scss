@@ -35,6 +35,14 @@ textarea {
   float: right;
 }
 
+.ltr {
+  direction: ltr;
+}
+
+.rtl {
+  direction: rtl;
+}
+
 .clear-both {
   clear: both;
 }
@@ -57,6 +65,10 @@ textarea {
 
 .inline-block {
   display: inline-block;
+}
+
+.logo-item {
+  margin: 0 10px 10px 0;
 }
 
 /*----------  Flex Helpers  ----------*/

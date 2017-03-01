@@ -78,6 +78,14 @@ header {
             content: ' | ';
         }
     }
+    .social-portfolio {
+        width: 90px;
+        height: 22px;
+        background: url('../images/portfolio-logo.png');
+        &:hover {
+            background-position: 0 -22px;
+        }
+    }
     a:hover {
         color: $curr-text-color;
     }
