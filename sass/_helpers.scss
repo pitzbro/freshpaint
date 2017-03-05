@@ -2,6 +2,16 @@
   list-style: none;
 }
 
+.comma-list .comma-item {
+  display: inline;
+  &:after {
+    content: ", ";
+  }
+  &:last-child:after {
+    content: "";
+  }
+}
+
 button, select {
   cursor: pointer;
 }
@@ -67,8 +77,36 @@ textarea {
   display: inline-block;
 }
 
+.label-inline {
+  display: inline;
+}
+
 .logo-item {
   margin: 0 10px 10px 0;
+}
+
+.english-text {
+  font-family: Open Sans; 
+}
+
+.block-link {
+  font-size: rem(10px);
+  text-align: center;
+  line-height: 1.3;
+  display: block;
+  background: $curr-bg-color;
+  padding: 6px;
+  color: #fff;
+  &:hover {
+    background: #545557;
+    color: #fff;
+  }
+  &.grey-link {
+    background: #727476;
+      &:hover {
+      background: #545557;
+    }
+  }
 }
 
 /*----------  Flex Helpers  ----------*/
@@ -112,6 +150,11 @@ textarea {
   height: 100%;
 }
 
+.round-button-center {
+  width: $round-button-size;
+  margin: 0 auto;
+}
+
 a.round-button {
     border-radius: 50%;
     color: #fff;
@@ -123,8 +166,8 @@ a.round-button {
     line-height: 18px;
     background: #EE944B;
     font-size: 16px;
-    width: 98px;
-    height: 98px;
+    width: $round-button-size;
+    height: $round-button-size;
     -ms-transform: rotate(5deg);
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
@@ -137,7 +180,11 @@ a.round-button {
     position: relative;
     &:hover {
       color: #fff;
-      -ms-transform: rotate(0deg);
-      -webkit-transform: rotate(0deg);    
+      // -ms-transform: rotate(0deg);
+      // -webkit-transform: rotate(0deg);
+      background-image: -webkit-linear-gradient(5deg, #F0964C, #F0594C);
+      background-image: -o-linear-gradient(5deg, #F0964C, #F0594C);
+      background-image: -moz-linear-gradient(5deg, #F0964C, #F0594C);
+      background-image: linear-gradient(5deg, #F0964C, #F0594C); 
     }
 }

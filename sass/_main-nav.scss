@@ -1,7 +1,7 @@
 .region-content-menu-inner {
     padding: 0 0 0 $side-padding;
     @include for-mobile-layout {
-      > *:not(.main-menu) {
+      .main-menu {
           display: none;
       }
     }
@@ -35,6 +35,9 @@ ul.menu {
         &.menu-seperator {
             border-top: 1px solid #4b4b4b;
             margin-top: 30px;
+        }
+        &.mobile-menu-item {
+            display: none;
         }
         li {
             padding: 2px 0;
