@@ -2,15 +2,15 @@
 1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
 1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
 1 verbose cli   'start' ]
-2 info using npm@3.10.8
-3 info using node@v6.9.1
+2 info using npm@3.10.10
+3 info using node@v7.2.1
 4 verbose run-script [ 'prestart', 'start', 'poststart' ]
 5 info lifecycle codingacademy-psdhtml@1.0.0~prestart: codingacademy-psdhtml@1.0.0
 6 silly lifecycle codingacademy-psdhtml@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle codingacademy-psdhtml@1.0.0~start: codingacademy-psdhtml@1.0.0
 8 verbose lifecycle codingacademy-psdhtml@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle codingacademy-psdhtml@1.0.0~start: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\wamp64\www\freshpaint\sites\all\themes\fresh_paint_omega\node_modules\.bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\yigal\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\yigal\AppData\Roaming\npm
-10 verbose lifecycle codingacademy-psdhtml@1.0.0~start: CWD: C:\wamp64\www\freshpaint\sites\all\themes\fresh_paint_omega
+9 verbose lifecycle codingacademy-psdhtml@1.0.0~start: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;E:\sites\wamp\www\freshpaint\sites\all\themes\fresh_paint_omega\node_modules\.bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\GnuWin32\bin;C:\Drush;E:\sites\wamp\bin\php\php5.4.3;E:\sites\wamp\bin\mysql\mysql5.5.24\bin;C:\Program Files (x86)\OpenSSH\bin;C:\Program Files (x86)\QuickTime\QTSystem\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\owner\AppData\Local\Microsoft\WindowsApps;C:\Users\owner\AppData\Roaming\npm;C:\Program Files (x86)\Microsoft VS Code
+10 verbose lifecycle codingacademy-psdhtml@1.0.0~start: CWD: E:\sites\wamp\www\freshpaint\sites\all\themes\fresh_paint_omega
 11 silly lifecycle codingacademy-psdhtml@1.0.0~start: Args: [ '/d /s /c', 'npm-run-all --parallel styles styles-rtl' ]
 12 silly lifecycle codingacademy-psdhtml@1.0.0~start: Returned: code: 1  signal: null
 13 info lifecycle codingacademy-psdhtml@1.0.0~start: Failed to exec start script
@@ -22,14 +22,14 @@
 14 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:40:14)
 14 verbose stack     at emitTwo (events.js:106:13)
 14 verbose stack     at ChildProcess.emit (events.js:191:7)
-14 verbose stack     at maybeClose (internal/child_process.js:877:16)
+14 verbose stack     at maybeClose (internal/child_process.js:885:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid codingacademy-psdhtml@1.0.0
-16 verbose cwd C:\wamp64\www\freshpaint\sites\all\themes\fresh_paint_omega
+16 verbose cwd E:\sites\wamp\www\freshpaint\sites\all\themes\fresh_paint_omega
 17 error Windows_NT 10.0.14393
 18 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "start"
-19 error node v6.9.1
-20 error npm  v3.10.8
+19 error node v7.2.1
+20 error npm  v3.10.10
 21 error code ELIFECYCLE
 22 error codingacademy-psdhtml@1.0.0 start: `npm-run-all --parallel styles styles-rtl`
 22 error Exit status 1

@@ -3025,6 +3025,8 @@ header {
     background: url("../images/portfolio-logo.png"); }
     .social-links-list .social-portfolio:hover {
       background-position: 0 -22px; }
+  .social-links-list .social-tickets:befoe {
+    content: "רכישת כרטיסים "; }
   .social-links-list a:hover {
     color: #ec1c24; }
 
