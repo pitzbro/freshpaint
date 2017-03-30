@@ -8,9 +8,13 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
   border: none;
   background: #e3e3e0;
   width: 100%;
-  padding: 18px 14px;
+  padding: 0 14px;
   font-size: rem(14px);
   line-height: rem(22px);
+}
+
+.region-content input {
+  min-height: 35px;
 }
 
 .region-content input[type="submit"] {
