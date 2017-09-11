@@ -110,6 +110,10 @@ ul.menu {
                         color: #000;
                     }
                 }
+                &[href$="purchase"] {
+                    background: #ffa41e;
+                    color: #fff;
+                }
             }
         }
     }

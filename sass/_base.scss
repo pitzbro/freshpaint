@@ -120,6 +120,10 @@ fieldset {
   border: none;
 }
 
+abbr[title], acronym[title] {
+    text-decoration: none;
+}
+
 .time-default {
   direction: ltr;
 }

@@ -97,6 +97,7 @@ textarea {
   background: $curr-bg-color;
   padding: 6px;
   color: #fff;
+  max-width: 120px;
   &:hover {
     background: #545557;
     color: #fff;
@@ -187,4 +188,33 @@ a.round-button {
       background-image: -moz-linear-gradient(5deg, #F0964C, #F0594C);
       background-image: linear-gradient(5deg, #F0964C, #F0594C); 
     }
+}
+
+.view-filters {
+  clear: both;
+}
+
+a.more-link {
+  margin: 0 5px;
+}
+
+.info-link-container {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    a.info-link {
+      color: #fff;
+      background: #4169e1;
+      font-size: rem(30px);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      transition: background 0.3s;
+      &:hover {
+        text-decoration: none;
+        background: #000;
+      }
+    } 
 }

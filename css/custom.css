@@ -2430,7 +2430,8 @@ textarea {
   display: block;
   background: #ec1c24;
   padding: 6px;
-  color: #fff; }
+  color: #fff;
+  max-width: 120px; }
   .block-link:hover {
     background: #545557;
     color: #fff; }
@@ -2503,6 +2504,30 @@ a.round-button {
     background-image: -o-linear-gradient(5deg, #F0964C, #F0594C);
     background-image: -moz-linear-gradient(5deg, #F0964C, #F0594C);
     background-image: linear-gradient(5deg, #F0964C, #F0594C); }
+
+.view-filters {
+  clear: both; }
+
+a.more-link {
+  margin: 0 5px; }
+
+.info-link-container {
+  position: fixed;
+  bottom: 30px;
+  right: 20px; }
+  .info-link-container a.info-link {
+    color: #fff;
+    background: #4169e1;
+    font-size: 1.875rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: background 0.3s; }
+    .info-link-container a.info-link:hover {
+      text-decoration: none;
+      background: #000; }
 
 /*----------  Containers  ----------*/
 .zone {
@@ -2661,6 +2686,9 @@ fieldset {
 fieldset {
   border: none; }
 
+abbr[title], acronym[title] {
+  text-decoration: none; }
+
 .time-default {
   direction: ltr; }
 
@@ -2673,9 +2701,12 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
   border: none;
   background: #e3e3e0;
   width: 100%;
-  padding: 18px 14px;
+  padding: 0 14px;
   font-size: 0.875rem;
   line-height: 1.375rem; }
+
+.region-content input {
+  min-height: 35px; }
 
 .region-content input[type="submit"] {
   display: inline-block;
@@ -2976,6 +3007,9 @@ ul.menu a {
       .mean-container .mean-bar .mean-nav ul li a.mean-expand:hover {
         background: transparent;
         color: #000; }
+    .mean-container .mean-bar .mean-nav ul li a[href$="purchase"] {
+      background: #ffa41e;
+      color: #fff; }
 
 .mean-container a.meanmenu-reveal {
   color: #4B4B4B; }
