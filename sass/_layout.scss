@@ -60,4 +60,13 @@
         padding: 0;
       }
   }
+  .zone-content {
+      display: flex;
+      flex-direction: column;
+      .region-content-menu {
+          order: 3;
+          padding-top: 20px;
+          border-top: solid 1px $light-color;
+      }
+  }
 }

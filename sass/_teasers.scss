@@ -12,6 +12,7 @@
     .teaser-image {
         width: 170px;
         margin-bottom: 20px;
+        text-align: center;
         @include for-mobile-layout {
             width: 100%;
         }
