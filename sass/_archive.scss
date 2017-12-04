@@ -1,0 +1,13 @@
+.archive-header {
+    background: $archive-color;
+    color: #fff;
+    padding: 2px 10px;
+}
+
+.archive-menu-fairs {
+    background: $archive-light-color;
+    h2.block-title {
+        border-color: $archive-color;
+        color: #fff;
+    }
+}

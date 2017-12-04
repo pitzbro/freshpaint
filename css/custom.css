@@ -3191,3 +3191,15 @@ header {
 
 .winner a:before {
   content: "Winner "; }
+
+/* View Modes */
+.archive-header {
+  background: #443e36;
+  color: #fff;
+  padding: 2px 10px; }
+
+.archive-menu-fairs {
+  background: #e4ddd5; }
+  .archive-menu-fairs h2.block-title {
+    border-color: #443e36;
+    color: #fff; }
