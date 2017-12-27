@@ -1,4 +1,5 @@
 
+$portrait-breakpoint: 480px;
 $mobile-breakpoint: 740px;
 $narrow-breakpoint: 980px;
 
@@ -6,6 +7,12 @@ $narrow-breakpoint: 980px;
 
 @mixin for-mobile-layout {
   @media (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin for-portrait-layout {
+  @media (max-width: $portrait-breakpoint) {
     @content;
   }
 }
