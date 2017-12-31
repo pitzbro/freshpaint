@@ -3248,7 +3248,9 @@ header {
     .archive-column-layout .view-content {
       column-count: 2; } }
   .archive-column-layout .view-content a {
-    color: #4B4B4B; }
+    color: #4B4B4B;
+    line-height: 25px;
+    margin-bottom: 10px; }
     .archive-column-layout .view-content a:hover {
       text-decoration: none;
       color: #ec1c24; }
