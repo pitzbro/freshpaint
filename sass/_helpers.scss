@@ -89,6 +89,18 @@ textarea {
   font-family: Open Sans; 
 }
 
+.region-content .block-links-container a {
+  display: inline-block;
+  background: $archive-color;
+  padding: 0 10px;
+  color: #fff;
+
+  &:hover {
+    text-decoration: none;
+    background: $curr-bg-color;
+  }
+}
+
 .block-link {
   font-size: rem(10px);
   text-align: center;

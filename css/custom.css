@@ -2423,6 +2423,15 @@ textarea {
 .english-text {
   font-family: Open Sans; }
 
+.region-content .block-links-container a {
+  display: inline-block;
+  background: #443e36;
+  padding: 0 10px;
+  color: #fff; }
+  .region-content .block-links-container a:hover {
+    text-decoration: none;
+    background: #ec1c24; }
+
 .block-link {
   font-size: 0.625rem;
   text-align: center;
