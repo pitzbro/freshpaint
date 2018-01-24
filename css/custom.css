@@ -3199,6 +3199,24 @@ header {
   content: "Winner "; }
 
 /* View Modes */
+ul.menu li.archive-main-menu {
+  padding: 0; }
+  ul.menu li.archive-main-menu a {
+    display: block;
+    border-top: 1px solid #4B4B4B;
+    border-bottom: 1px solid #4B4B4B;
+    background: #666;
+    color: #fff;
+    padding: 3px 7px;
+    font-size: 15px;
+    font-weight: normal;
+    transition: all .3s; }
+    ul.menu li.archive-main-menu a:hover {
+      background: #4B4B4B; }
+  @media (max-width: 740px) {
+    ul.menu li.archive-main-menu {
+      display: none; } }
+
 .archive-header {
   background: #443e36;
   color: #fff;

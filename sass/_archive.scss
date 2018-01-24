@@ -1,3 +1,26 @@
+ul.menu li.archive-main-menu {
+    padding: 0;
+    a {
+        display: block;
+        border-top: 1px solid $light-color;
+        border-bottom: 1px solid $light-color;
+        background: #666;
+        color: #fff;
+        padding: 3px 7px;
+        font-size: 15px;
+        font-weight: normal;
+
+        transition: all .3s;
+
+        &:hover {
+            background: $light-color;
+        }
+    }
+    @include for-mobile-layout {
+        display: none;
+    } 
+}
+
 .archive-header {
     background: $archive-color;
     color: #fff;
