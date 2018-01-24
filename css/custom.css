@@ -3274,13 +3274,15 @@ ul.menu li.archive-main-menu {
   @media (max-width: 980px) {
     .archive-column-layout .view-content {
       column-count: 2; } }
-  .archive-column-layout .view-content a {
+  .archive-column-layout .view-content a, .archive-column-layout .view-content .item {
     color: #4B4B4B;
     line-height: 25px;
     margin-bottom: 10px; }
-    .archive-column-layout .view-content a:hover {
+    .archive-column-layout .view-content a:hover, .archive-column-layout .view-content .item:hover {
       text-decoration: none;
       color: #ec1c24; }
+  .archive-column-layout .view-content .item {
+    color: darkgrey; }
   .archive-column-layout .view-content .colored-heading {
     font-size: 2.5rem;
     color: #000;

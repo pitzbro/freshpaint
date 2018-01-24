@@ -97,7 +97,7 @@ ul.menu li.archive-main-menu {
         column-count: 2;
     }
 
-    a {
+    a, .item {
         color: $light-color;
         line-height: 25px;
         margin-bottom: 10px;
@@ -105,6 +105,10 @@ ul.menu li.archive-main-menu {
             text-decoration: none;
             color: $curr-text-color;         
         }
+    }
+
+    .item {
+        color: darkgrey;
     }
 
     .colored-heading {
