@@ -191,6 +191,14 @@ a.round-button {
     transition: all 0.7s;
     z-index: 1;
     position: relative;
+
+    &.second {
+      background-image: -webkit-linear-gradient(5deg, #b12869, #de8bb2);
+      background-image: -o-linear-gradient(5deg, #b12869, #de8bb2);
+      background-image: -moz-linear-gradient(5deg, #b12869, #de8bb2);
+      background-image: linear-gradient(5deg, #b12869, #de8bb2);
+    }
+
     &:hover {
       color: #fff;
       // -ms-transform: rotate(0deg);
@@ -199,6 +207,13 @@ a.round-button {
       background-image: -o-linear-gradient(5deg, #F0964C, #F0594C);
       background-image: -moz-linear-gradient(5deg, #F0964C, #F0594C);
       background-image: linear-gradient(5deg, #F0964C, #F0594C); 
+
+      &.second {
+        background-image: -webkit-linear-gradient(5deg, #de8bb2, #b12869);
+        background-image: -o-linear-gradient(5deg, #de8bb2, #b12869);
+        background-image: -moz-linear-gradient(5deg, #de8bb2, #b12869);
+        background-image: linear-gradient(5deg, #de8bb2, #b12869);
+      }
     }
 }
 
