@@ -2970,7 +2970,7 @@ ul.menu li {
   ul.menu li.mobile-menu-item {
     display: none; }
   ul.menu li li {
-    padding: 2px 0;
+    padding: 0.125rem 0;
     font-size: 0.6875rem;
     margin: 0;
     border: none;
@@ -3042,7 +3042,7 @@ ul.menu a {
   text-align: end;
   line-height: 60px;
   color: #939393;
-  font-size: 10px;
+  font-size: 0.625rem;
   text-align: end; }
   .region-footer-first-inner a {
     color: #000; }
@@ -3207,6 +3207,43 @@ header {
 
 .winner a:before {
   content: "Winner "; }
+
+/* Blocks */
+.accessibility-block {
+  position: fixed;
+  bottom: 7%;
+  left: 0;
+  border: solid 1px #000;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  overflow: hidden; }
+  .accessibility-block li:not(:last-child) {
+    border-bottom: solid 1px #000; }
+  .accessibility-block button {
+    background: #fff;
+    color: #024ea0;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 0.8125rem;
+    text-shadow: none;
+    transition: all .3s; }
+    .accessibility-block button:disabled, .accessibility-block button:hover:disabled {
+      background: #cccccc;
+      color: #fff; }
+    .accessibility-block button:hover {
+      background: #2d7dd4;
+      color: #fff; }
+    .accessibility-block button:focus {
+      box-shadow: none;
+      border-color: #024ea0; }
+  .accessibility-block .accessibility-toggle-btn {
+    background: #024ea0;
+    color: #fff;
+    font-size: 1.125rem; }
 
 /* View Modes */
 ul.menu li.archive-main-menu {

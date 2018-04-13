@@ -1,0 +1,44 @@
+.accessibility-block {
+    position: fixed;
+    bottom: 7%;
+    left: 0;
+    border: solid 1px #000;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+    li:not(:last-child) {
+        border-bottom: solid 1px #000;
+    }
+    button {
+        background: #fff;
+        color: $color2;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        display: block;
+        width: rem(40px);
+        height: rem(40px);
+        font-size: rem(13px);
+        text-shadow: none;
+
+        transition: all .3s;
+        
+        &:disabled, &:hover:disabled {
+            background: #cccccc;
+            color: #fff;
+        }
+        &:hover {
+            background: $color3;
+            color: #fff;           
+        }
+        &:focus {
+            box-shadow: none;
+            border-color: $color2;
+        }
+    }
+    .accessibility-toggle-btn {
+        background: $color2;
+        color: #fff;
+        font-size: rem(18px);
+    }
+}
