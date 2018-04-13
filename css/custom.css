@@ -3213,12 +3213,15 @@ header {
   position: fixed;
   bottom: 7%;
   left: 0;
-  border: solid 1px #000;
+  border: solid 1px #241f20;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   overflow: hidden; }
+  @media (max-width: 740px) {
+    .accessibility-block {
+      display: none; } }
   .accessibility-block li:not(:last-child) {
-    border-bottom: solid 1px #000; }
+    border-bottom: solid 1px #241f20; }
   .accessibility-block button {
     background: #fff;
     color: #024ea0;
@@ -3226,9 +3229,9 @@ header {
     border-radius: 0;
     padding: 0;
     display: block;
-    width: 2.5rem;
-    height: 2.5rem;
-    font-size: 0.8125rem;
+    width: 2.3125rem;
+    height: 2.3125rem;
+    font-size: 0.75rem;
     text-shadow: none;
     transition: all .3s; }
     .accessibility-block button:disabled, .accessibility-block button:hover:disabled {
@@ -3243,7 +3246,7 @@ header {
   .accessibility-block .accessibility-toggle-btn {
     background: #024ea0;
     color: #fff;
-    font-size: 1.125rem; }
+    font-size: 1.25rem; }
 
 /* View Modes */
 ul.menu li.archive-main-menu {

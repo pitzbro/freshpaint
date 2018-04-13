@@ -2,12 +2,18 @@
     position: fixed;
     bottom: 7%;
     left: 0;
-    border: solid 1px #000;
+    border: solid 1px #241f20;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     overflow: hidden;
+
+    @include for-mobile-layout {
+        display: none;
+    }
+
+
     li:not(:last-child) {
-        border-bottom: solid 1px #000;
+        border-bottom: solid 1px #241f20;
     }
     button {
         background: #fff;
@@ -16,9 +22,9 @@
         border-radius: 0;
         padding: 0;
         display: block;
-        width: rem(40px);
-        height: rem(40px);
-        font-size: rem(13px);
+        width: rem(37px);
+        height: rem(37px);
+        font-size: rem(12px);
         text-shadow: none;
 
         transition: all .3s;
@@ -39,6 +45,6 @@
     .accessibility-toggle-btn {
         background: $color2;
         color: #fff;
-        font-size: rem(18px);
+        font-size: rem(20px);
     }
 }
