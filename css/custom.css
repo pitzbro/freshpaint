@@ -3216,10 +3216,13 @@ header {
   border: solid 1px #241f20;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 200; }
   @media (max-width: 740px) {
     .accessibility-block {
-      display: none; } }
+      bottom: 0;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px; } }
   .accessibility-block li:not(:last-child) {
     border-bottom: solid 1px #241f20; }
   .accessibility-block button {
