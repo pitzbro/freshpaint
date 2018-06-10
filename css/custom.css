@@ -2601,6 +2601,11 @@ a.more-link {
 * {
   box-sizing: border-box; }
 
+/*------Overlay filter fix-------*/
+#overlay-container, .overlay-modal-background, .overlay-element {
+  position: fixed; }
+
+/*------------------------*/
 button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
   outline: none; }
 
