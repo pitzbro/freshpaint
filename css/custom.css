@@ -2704,6 +2704,14 @@ fieldset {
   padding: 0;
   margin: 0; }
 
+.region-content ul {
+  margin: 0 1rem 1rem;
+  list-style: disc; }
+
+.region-content ol {
+  margin: 0 1rem 1rem;
+  list-style: decimal; }
+
 fieldset {
   border: none; }
 
