@@ -2430,14 +2430,14 @@ textarea {
   color: #fff; }
   .region-content .block-links-container a:hover {
     text-decoration: none;
-    background: #ec1c24; }
+    background: #181a41; }
 
 .block-link {
   font-size: 0.625rem;
   text-align: center;
   line-height: 1.3;
   display: block;
-  background: #ec1c24;
+  background: #181a41;
   padding: 6px;
   color: #fff;
   max-width: 120px; }
@@ -2559,7 +2559,7 @@ a.more-link {
     height: auto;
     max-width: 100%; }
   .region-content a, .region-content-info a {
-    color: #ec1c24; }
+    color: #393bad; }
     .region-content a:hover, .region-content-info a:hover {
       text-decoration: underline; }
   .region-content p, .region-content-info p {
@@ -2614,8 +2614,7 @@ html {
   font-family: Open Sans; }
 
 body {
-  background-color: #f9eff3;
-  background: url("../images/background/003.jpg") no-repeat center center fixed;
+  background: url("../images/background/003.jpg") #181a41 no-repeat center center fixed;
   background-size: cover; }
   body.context-art-fair {
     background-image: url("../images//background/002.jpg"); }
@@ -2627,11 +2626,11 @@ body {
 ::-moz-selection {
   /* Code for Firefox */
   color: #fff;
-  background: #ec1c24; }
+  background: #393bad; }
 
 ::selection {
   color: #fff;
-  background: #ec1c24; }
+  background: #393bad; }
 
 a {
   cursor: pointer;
@@ -2676,7 +2675,7 @@ h4 {
   margin-bottom: 5px; }
 
 .linked-heading {
-  border-color: #ec1c24; }
+  border-color: #393bad; }
 
 .colored-heading {
   line-height: 25px;
@@ -2689,14 +2688,14 @@ h4 {
   text-align: center; }
 
 .region-content .colored-btn a {
-  background: #ec1c24;
+  background: #181a41;
   display: inline-block;
   color: #fff;
   padding: 5px 10px;
   border-radius: 3px;
   margin-bottom: 20px; }
   .region-content .colored-btn a:hover {
-    background: #f26368;
+    background: #2d3079;
     text-decoration: none; }
 
 ul,
@@ -2740,7 +2739,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
 .region-content input[type="submit"] {
   display: inline-block;
   border: none;
-  background: #ec1c24;
+  background: #181a41;
   color: #fff;
   border-radius: 50%;
   width: 70px;
@@ -2754,7 +2753,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
   .region-content input[type="submit"].element-hidden {
     display: none; }
   .region-content input[type="submit"]:hover {
-    background: #f26368; }
+    background: #2d3079; }
 
 .form-bordered {
   border-bottom: solid 1px #000;
@@ -2782,7 +2781,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
     .region-content .views-exposed-form .views-exposed-widget .form-type-bef-link.form-item-edit-field-salon-date-value-selective- {
       display: none; }
     .region-content .views-exposed-form .views-exposed-widget .form-type-bef-link a {
-      background: #ec1c24;
+      background: #181a41;
       width: 40px;
       height: 40px;
       line-height: 40px;
@@ -2792,7 +2791,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
       .region-content .views-exposed-form .views-exposed-widget .form-type-bef-link a.active {
         background: #FF9800; }
       .region-content .views-exposed-form .views-exposed-widget .form-type-bef-link a:hover {
-        background: #f26368;
+        background: #2d3079;
         text-decoration: none; }
 
 /*----------------Slick Gallery-----------------*/
@@ -2889,7 +2888,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="tel
   .small-thumbs-row:hover {
     filter: grayscale(0%); }
     .small-thumbs-row:hover a {
-      color: #ec1c24 !important;
+      color: #393bad !important;
       text-decoration: none !important; }
   .small-thumbs-row .image-text-block {
     padding-top: 10px;
@@ -3059,7 +3058,7 @@ ul.menu a {
   .region-footer-first-inner a {
     color: #000; }
     .region-footer-first-inner a:hover {
-      color: #ec1c24; }
+      color: #393bad; }
   @media (max-width: 740px) {
     .region-footer-first-inner {
       text-align: center;
@@ -3136,7 +3135,7 @@ header {
   .social-links-list .social-tickets:befoe {
     content: "רכישת כרטיסים "; }
   .social-links-list a:hover {
-    color: #ec1c24; }
+    color: #393bad; }
 
 .region-blockgroup-header-panel-inner {
   display: flex;
@@ -3195,7 +3194,7 @@ header {
   line-height: 25px;
   text-align: center; }
   .newsletter-link-block .newsletter-link:hover {
-    background: #ec1c24;
+    background: #181a41;
     color: #fff; }
 
 .block-locale {
@@ -3345,7 +3344,7 @@ ul.menu li.archive-main-menu {
     margin-bottom: 10px; }
     .archive-column-layout .view-content a:hover, .archive-column-layout .view-content .item:hover {
       text-decoration: none;
-      color: #ec1c24; }
+      color: #393bad; }
   .archive-column-layout .view-content .item {
     color: darkgrey; }
   .archive-column-layout .view-content .colored-heading {
@@ -3385,6 +3384,6 @@ ul.menu li.archive-main-menu {
         width: 100%; }
       .past-fair-view .view-content > * a:hover {
         text-decoration: none;
-        color: #ec1c24; }
+        color: #393bad; }
         .past-fair-view .view-content > * a:hover img {
           filter: grayscale(0%); }

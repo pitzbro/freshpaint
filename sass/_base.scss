@@ -23,8 +23,8 @@ html {
 }
 
 body {
-	background-color: #f9eff3;
-	background: url('../images/background/003.jpg') no-repeat center center fixed;
+	// background-color: $curr-bg-color;
+	background: url('../images/background/003.jpg') $curr-bg-color no-repeat center center fixed;
   background-size: cover;
   &.context-art-fair { background-image: url('../images//background/002.jpg'); }
   &.context-family { background-image: url('../images//background/001.jpg'); }
