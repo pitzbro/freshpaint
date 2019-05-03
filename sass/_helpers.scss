@@ -177,42 +177,42 @@ a.round-button {
     padding: 10px;
     box-sizing: border-box;
     line-height: 18px;
-    background: #EE944B;
+    background: #6dc9c8;
     font-size: 16px;
     width: $round-button-size;
     height: $round-button-size;
     -ms-transform: rotate(5deg);
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
-    background-image: -webkit-linear-gradient(5deg, #F0594C, #F0964C);
-    background-image: -o-linear-gradient(5deg, #F0594C, #F0964C);
-    background-image: -moz-linear-gradient(5deg, #F0594C, #F0964C);
-    background-image: linear-gradient(5deg, #F0594C, #F0964C);
+    background-image: -webkit-linear-gradient(5deg, #2f9493, #6dc9c8);
+    background-image: -o-linear-gradient(5deg, #2f9493, #6dc9c8);
+    background-image: -moz-linear-gradient(5deg, #2f9493, #6dc9c8);
+    background-image: linear-gradient(5deg, #2f9493, #6dc9c8);
     transition: all 0.7s;
     z-index: 1;
     position: relative;
 
     &.second {
-      background-image: -webkit-linear-gradient(5deg, #b12869, #de8bb2);
-      background-image: -o-linear-gradient(5deg, #b12869, #de8bb2);
-      background-image: -moz-linear-gradient(5deg, #b12869, #de8bb2);
-      background-image: linear-gradient(5deg, #b12869, #de8bb2);
+      background-image: -webkit-linear-gradient(5deg, #b12869, #f7adce);
+      background-image: -o-linear-gradient(5deg, #b12869, #f7adce);
+      background-image: -moz-linear-gradient(5deg, #b12869, #f7adce);
+      background-image: linear-gradient(5deg, #b12869, #f7adce);
     }
 
     &:hover {
       color: #fff;
       // -ms-transform: rotate(0deg);
       // -webkit-transform: rotate(0deg);
-      background-image: -webkit-linear-gradient(5deg, #F0964C, #F0594C);
-      background-image: -o-linear-gradient(5deg, #F0964C, #F0594C);
-      background-image: -moz-linear-gradient(5deg, #F0964C, #F0594C);
-      background-image: linear-gradient(5deg, #F0964C, #F0594C); 
+      background-image: -webkit-linear-gradient(5deg, #6dc9c8, #2f9493);
+      background-image: -o-linear-gradient(5deg, #6dc9c8, #2f9493);
+      background-image: -moz-linear-gradient(5deg, #6dc9c8, #2f9493);
+      background-image: linear-gradient(5deg, #6dc9c8, #2f9493); 
 
       &.second {
-        background-image: -webkit-linear-gradient(5deg, #de8bb2, #b12869);
-        background-image: -o-linear-gradient(5deg, #de8bb2, #b12869);
-        background-image: -moz-linear-gradient(5deg, #de8bb2, #b12869);
-        background-image: linear-gradient(5deg, #de8bb2, #b12869);
+        background-image: -webkit-linear-gradient(5deg, #f7adce, #b12869);
+        background-image: -o-linear-gradient(5deg, #f7adce, #b12869);
+        background-image: -moz-linear-gradient(5deg, #f7adce, #b12869);
+        background-image: linear-gradient(5deg, #f7adce, #b12869);
       }
     }
 }
