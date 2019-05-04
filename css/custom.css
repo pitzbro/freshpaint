@@ -2946,6 +2946,10 @@ ul.custom-pager .next a:after {
 .region-content-info ul.custom-pager a:hover {
   color: #000; }
 
+@media (max-width: 980px) {
+  .collaborators-page .flex {
+    justify-content: center; } }
+
 /* Components */
 a#main-content {
   display: none; }

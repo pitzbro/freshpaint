@@ -1,0 +1,9 @@
+// Collaborators Page
+
+.collaborators-page {
+    .flex {
+        @include for-narrow-layout {
+            justify-content: center;
+        }
+    }
+}
