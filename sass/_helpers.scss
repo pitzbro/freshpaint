@@ -245,3 +245,21 @@ a.more-link {
       }
     } 
 }
+
+// DATE
+
+@mixin date {
+  font-family: PauzaFOT-Book;
+  color: #4B4B4B;
+}
+
+.date-block {
+  @include date;
+  border-top: solid 2px #4B4B4B;
+  border-bottom: solid 2px #4B4B4B;
+  line-height: 1.5rem;
+  padding: 5px 0;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  display: block;
+}

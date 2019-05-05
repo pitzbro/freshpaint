@@ -2545,6 +2545,17 @@ a.more-link {
       text-decoration: none;
       background: #000; }
 
+.date-block {
+  font-family: PauzaFOT-Book;
+  color: #4B4B4B;
+  border-top: solid 2px #4B4B4B;
+  border-bottom: solid 2px #4B4B4B;
+  line-height: 1.5rem;
+  padding: 5px 0;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  display: block; }
+
 /*----------  Containers  ----------*/
 .zone {
   background: #fff; }
