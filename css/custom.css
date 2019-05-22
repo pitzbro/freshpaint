@@ -2961,6 +2961,66 @@ ul.custom-pager .next a:after {
   .collaborators-page .flex {
     justify-content: center; } }
 
+.map-link {
+  min-height: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-image: url("../images/map_link_eng.jpg");
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+  font-size: 16px; }
+  @media (max-width: 980px) {
+    .map-link {
+      font-size: 12px;
+      min-height: 340px; } }
+  @media (max-width: 480px) {
+    .map-link {
+      min-height: 230px; } }
+  .map-link .link-info {
+    margin-bottom: 2.5em; }
+  .map-link .link-date {
+    font-size: 1.75em; }
+  .map-link h3 {
+    border: none;
+    font-size: 2.375em;
+    margin-bottom: 0.375em;
+    padding: 0; }
+  .map-link button, .map-link .btn-link {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    line-height: 3.2em;
+    background: #6dc9c8;
+    border: none;
+    padding: 0 1.625em;
+    text-decoration: none;
+    font-size: 1.18em;
+    font-weight: bold;
+    border-radius: 0;
+    text-shadow: none;
+    color: #0d1b4a;
+    font-family: 'Alef';
+    transition: color .3s; }
+    .map-link button:hover, .map-link .btn-link:hover {
+      text-decoration: none;
+      color: #fff; }
+    .map-link button::before, .map-link .btn-link::before {
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      left: 12px;
+      top: -12px;
+      border: 3px solid #6dc9c8;
+      box-sizing: border-box; }
+
 /* Components */
 a#main-content {
   display: none; }

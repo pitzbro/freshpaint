@@ -7,3 +7,82 @@
         }
     }
 }
+
+// Gallery Weekend
+
+.map-link {
+    min-height: 470px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-image: url('../images/map_link_eng.jpg');
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    
+    font-size: 16px;
+    
+    @include for-narrow-layout {
+        font-size: 12px;
+        min-height: 340px;
+    }
+
+    @include for-portrait-layout {
+        min-height: 230px;
+    }
+    
+    .link-info {
+        margin-bottom: 2.5em;
+    }
+    
+    .link-date {
+        font-size: 1.75em;
+    }
+
+    h3 {
+        border: none;
+        font-size: 2.375em;
+        margin-bottom: 0.375em;
+        padding: 0;
+    }
+
+    button, .btn-link {
+        text-decoration: none;
+        position: relative;
+        display: inline-block;
+        line-height: 3.2em;
+        background: #6dc9c8;
+        border: none;
+        padding: 0 1.625em;
+        text-decoration: none;
+        font-size: 1.18em;
+        font-weight: bold;
+        border-radius: 0;
+        text-shadow: none;
+        color: #0d1b4a;
+        font-family: 'Alef';
+        
+        transition: color .3s;
+        
+        &:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        &::before {
+            content: '';
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            left: 12px;
+            top: -12px;
+            border: 3px solid #6dc9c8;
+            box-sizing: border-box;
+        }
+    }
+}
