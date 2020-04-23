@@ -162,3 +162,13 @@ ul.custom-pager .next a:after {
 /*--------------Archive----------------*/
 ul.menu li.archive-main-menu a {
   font-size: 16px; }
+
+/*--------------Popup----------------*/
+#popup-message-window > h1.popup-message-title {
+  display: block; }
+
+#popup-message-window .heb-text {
+  display: block; }
+
+#popup-message-window .eng-text {
+  display: none; }
