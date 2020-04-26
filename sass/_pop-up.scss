@@ -1,33 +1,42 @@
-#popup-message-background {
-    display: none;
-}
-
 #popup-message-window {
+    font-family: Alef, Arial, Helvetica, sans-serif;
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
     height: auto !important;
-    max-width: 400px !important;
+    max-width: 550px !important;
     width: 86vw !important;
     box-shadow: 0px 2px 14px 2px rgba(0, 0, 0, 0.5);
-    padding: 10px 36px 44px;
-    font-size: rem(16px);
-    max-height: 80vh;
+    padding: 10px 46px 44px;
+    font-size: 0.833rem;
+    // max-height: 80vh;
+    max-height: 86vh;
     line-height: 1.4;
     border: none;
 
-    .heb-text {
+    > h1.popup-message-title {
+        direction: rtl;
+
         display: none;
     }
 
-    > h1.popup-message-title {
+    .heb-text {
+        // border-bottom: 1px dotted #d3d3d3;
+        // margin-bottom: 20px;
+        // padding-bottom: 10px;
         display: none;
+    }
+
+    .eng-text {
+        direction: ltr;
     }
 
     h1.popup-message-title {
         text-align: start;
         border-top: none;
         padding-top: 0;
+        border: none;
+        margin-bottom: 6px;
     }
 
     #popup-message-close {

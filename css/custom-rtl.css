@@ -23,13 +23,15 @@ html {
 @media (max-width: 980px) {
   .container-12 .grid-2.region-content-menu {
     margin: 0 10px 0 0; }
-  .container-12 .grid-7.region-content, .container-12 .grid-10.region-content {
+  .container-12 .grid-7.region-content,
+  .container-12 .grid-10.region-content {
     margin: 0 0 0 10px; } }
 
 @media (max-width: 740px) {
   .container-12 .grid-2.region-content-menu {
     margin: 0 10px; }
-  .container-12 .grid-7.region-content, .container-12 .grid-10.region-content {
+  .container-12 .grid-7.region-content,
+  .container-12 .grid-10.region-content {
     margin: 0 10px; } }
 
 /*-------------------Header-----------------*/
@@ -59,10 +61,12 @@ header .region-header-first {
   right: 0; }
 
 /*------------------Main-------------------*/
-.region-content, .region-content-info {
+.region-content,
+.region-content-info {
   padding: 0 0 0 1.25em; }
   @media (max-width: 740px) {
-    .region-content, .region-content-info {
+    .region-content,
+    .region-content-info {
       padding: 0; } }
 
 /*---------------Navigation-----------------*/
@@ -104,7 +108,11 @@ header .region-header-first {
       margin: 0 5px 10px 5px; } }
 
 /*------------------Forms--------------*/
-::-webkit-input-placeholder, .region-content input[type="submit"], input[type="text"], input[type="email"], textarea {
+::-webkit-input-placeholder,
+.region-content input[type="submit"],
+input[type="text"],
+input[type="email"],
+textarea {
   font-family: Alef; }
 
 /*------------------Galleries--------------*/
@@ -116,18 +124,18 @@ header .region-header-first {
       margin: 0 5px 30px 5px; } }
 
 /*--------slick-------------*/
-[dir='rtl'] .slick-prev:before {
-  content: '';
+[dir="rtl"] .slick-prev:before {
+  content: "";
   background-position: -65px -65px; }
 
-[dir='rtl'] .slick-next:before {
-  content: '';
+[dir="rtl"] .slick-next:before {
+  content: "";
   background-position: 0 -65px; }
 
-[dir='rtl'] .slick-prev {
+[dir="rtl"] .slick-prev {
   right: 0; }
 
-[dir='rtl'] .slick-next {
+[dir="rtl"] .slick-next {
   left: 0; }
 
 /*---------------Pagers-------------------*/

@@ -1,5 +1,5 @@
-@import 'functions';
-@import 'vars';
+@import "functions";
+@import "vars";
 
 /*------------Admin Menu RTL Fix---------*/
 
@@ -7,14 +7,14 @@
   right: auto;
 }
 #admin-menu .dropdown li li.expandable ul {
-margin: -20px 160px 0 0 !important;
+  margin: -20px 160px 0 0 !important;
 }
 
 /*--------------------Global---------------------*/
 
 html {
-    font-family: $hebrew-font, Arial, Helvetica, sans-serif;
-    font-size: 18px;
+  font-family: $hebrew-font, Arial, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
 /*--------------------Layout------------------*/
@@ -25,88 +25,91 @@ html {
 
 @include for-narrow-layout {
   .container-12 .grid-2.region-content-menu {
-      margin: 0 10px 0 0;
+    margin: 0 10px 0 0;
   }
 
-  .container-12 .grid-7.region-content, .container-12 .grid-10.region-content {
-      margin: 0 0 0 10px;
+  .container-12 .grid-7.region-content,
+  .container-12 .grid-10.region-content {
+    margin: 0 0 0 10px;
   }
 }
 
 @include for-mobile-layout {
   .container-12 .grid-2.region-content-menu {
-      margin: 0 10px;
+    margin: 0 10px;
   }
-  .container-12 .grid-7.region-content, .container-12 .grid-10.region-content {
-      margin: 0 10px; 
+  .container-12 .grid-7.region-content,
+  .container-12 .grid-10.region-content {
+    margin: 0 10px;
   }
 }
 
 /*-------------------Header-----------------*/
 
 header {
-    .region-header-second {
-        padding: 0 0 0 $side-padding;
-        @include for-mobile-layout {
-            padding: 0;
-        }
+  .region-header-second {
+    padding: 0 0 0 $side-padding;
+    @include for-mobile-layout {
+      padding: 0;
     }
-    .region-header-first{
-        padding: 0 $side-padding 0 0;
-        @include for-mobile-layout {
-            padding: 0;
-            .header-logo img {
-                margin: 0 0 0 15px;
-            }
-        }
+  }
+  .region-header-first {
+    padding: 0 $side-padding 0 0;
+    @include for-mobile-layout {
+      padding: 0;
+      .header-logo img {
+        margin: 0 0 0 15px;
+      }
     }
+  }
 }
 
 .region-blockgroup-header-panel-inner > div {
-    margin: 0 20px 0 0;
+  margin: 0 20px 0 0;
 }
 
-#block-search-form {   
-    #edit-search-block-form--2 {
-        right: auto;
-        left: 0;
-    }
-    .form-actions input {
-        left: auto;
-        right: 0;
-    }
+#block-search-form {
+  #edit-search-block-form--2 {
+    right: auto;
+    left: 0;
+  }
+  .form-actions input {
+    left: auto;
+    right: 0;
+  }
 }
 
 /*------------------Main-------------------*/
 
-.region-content, .region-content-info {
-    padding: 0 0 0 $side-padding;
-    @include for-mobile-layout {
-        padding: 0;
-    }
+.region-content,
+.region-content-info {
+  padding: 0 0 0 $side-padding;
+  @include for-mobile-layout {
+    padding: 0;
+  }
 }
 
 /*---------------Navigation-----------------*/
 
 .region-content-menu-inner {
-    padding: 0 $side-padding 0 0;
+  padding: 0 $side-padding 0 0;
 }
 
 /*---------------Responsive Mean Menu-----------------*/
 
 .mean-container a.meanmenu-reveal {
-    right: auto !important; 
-    left: 0 !important;
+  right: auto !important;
+  left: 0 !important;
 }
 
 .mean-container .mean-bar .mean-nav {
-    border-right: none;
-    border-left: 1px solid #000;
-    right: -1px;
-    ul li a.mean-expand {
-        right: auto;
-        left: 0;
-    }
+  border-right: none;
+  border-left: 1px solid #000;
+  right: -1px;
+  ul li a.mean-expand {
+    right: auto;
+    left: 0;
+  }
 }
 
 /*---------------Info-----------------*/
@@ -118,8 +121,8 @@ header {
 /*------------------Footer--------------*/
 
 .region-footer-first-inner {
-    direction: ltr;
-    text-align: start;
+  direction: ltr;
+  text-align: start;
 }
 
 /*----------------Teasers------------------*/
@@ -127,24 +130,28 @@ header {
 /*------Main Teasers------*/
 
 .teaser-row {
-    .teaser-info {
-        padding: 0 20px 0 0;
-    }
+  .teaser-info {
+    padding: 0 20px 0 0;
+  }
 }
 
 /*------Small Teasers Thumbnails Preview------*/
 
 .small-thumbs-row {
-    margin: 0 0 18px 15px;
-    @include for-mobile-layout {
-        margin: 0 5px 10px 5px;
-    }
+  margin: 0 0 18px 15px;
+  @include for-mobile-layout {
+    margin: 0 5px 10px 5px;
+  }
 }
 
 /*------------------Forms--------------*/
 
-::-webkit-input-placeholder, .region-content input[type="submit"], input[type="text"], input[type="email"], textarea {
-    font-family: $hebrew-font; 
+::-webkit-input-placeholder,
+.region-content input[type="submit"],
+input[type="text"],
+input[type="email"],
+textarea {
+  font-family: $hebrew-font;
 }
 
 /*------------------Galleries--------------*/
@@ -152,50 +159,49 @@ header {
 /*--------masonry-----------*/
 
 .masonry-item > div {
-    margin: 0 0 30px 30px;
-    @include for-mobile-layout {
-        margin: 0 5px 30px 5px;
-    }
+  margin: 0 0 30px 30px;
+  @include for-mobile-layout {
+    margin: 0 5px 30px 5px;
+  }
 }
 
 /*--------slick-------------*/
 
-[dir='rtl'] .slick-prev:before {
-    content: '';
-    background-position: -65px -65px;
+[dir="rtl"] .slick-prev:before {
+  content: "";
+  background-position: -65px -65px;
 }
 
-[dir='rtl'] .slick-next:before {
-    content: '';
-    background-position: 0 -65px;
+[dir="rtl"] .slick-next:before {
+  content: "";
+  background-position: 0 -65px;
 }
 
-[dir='rtl'] .slick-prev {
-    right: 0;
+[dir="rtl"] .slick-prev {
+  right: 0;
 }
 
-[dir='rtl'] .slick-next {
-    left: 0;
+[dir="rtl"] .slick-next {
+  left: 0;
 }
 
 /*---------------Pagers-------------------*/
 
 /*--------custome pagers-------------*/
 
-
 ul.custom-pager .previous a:after {
   left: auto;
   right: 0;
-@include for-mobile-layout {
+  @include for-mobile-layout {
     right: 50%;
-    margin: 0 -50px 0 0 ;
+    margin: 0 -50px 0 0;
   }
 }
 
 ul.custom-pager .next a:after {
   left: auto;
   right: 50px;
-@include for-mobile-layout {
+  @include for-mobile-layout {
     right: 50%;
     margin: 0;
   }
@@ -212,31 +218,28 @@ ul.custom-pager .next a:after {
 }
 
 .info-link-container {
-    right: auto;
-    left: 20px;
+  right: auto;
+  left: 20px;
 }
 
 /*--------------Archive----------------*/
 
 ul.menu li.archive-main-menu a {
-    font-size: 16px;
+  font-size: 16px;
 }
-
 
 /*--------------Popup----------------*/
 
 #popup-message-window {
+  > h1.popup-message-title {
+    display: block;
+  }
 
-    > h1.popup-message-title {
-        display: block;
-    }
+  .heb-text {
+    display: block;
+  }
 
-    .heb-text {
-        display: block;
-    }
-
-    .eng-text {
-        display: none;
-    }
-
+  .eng-text {
+    display: none;
+  }
 }
