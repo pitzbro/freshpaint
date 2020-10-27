@@ -193,10 +193,10 @@ a.round-button {
     position: relative;
 
     &.second {
-      background-image: -webkit-linear-gradient(5deg, #b12869, #f7adce);
-      background-image: -o-linear-gradient(5deg, #b12869, #f7adce);
-      background-image: -moz-linear-gradient(5deg, #b12869, #f7adce);
-      background-image: linear-gradient(5deg, #b12869, #f7adce);
+      background-image: -webkit-linear-gradient(5deg, #ff9800, #ff0000);
+      background-image: -o-linear-gradient(5deg, #ff9800, #ff0000);
+      background-image: -moz-linear-gradient(5deg, #ff9800, hsl(0, 100%, 50%));
+      background-image: linear-gradient(5deg, #ff9800, #ff0000);
     }
 
     &:hover {
@@ -209,10 +209,10 @@ a.round-button {
       background-image: linear-gradient(5deg, #6dc9c8, #2f9493); 
 
       &.second {
-        background-image: -webkit-linear-gradient(5deg, #f7adce, #b12869);
-        background-image: -o-linear-gradient(5deg, #f7adce, #b12869);
-        background-image: -moz-linear-gradient(5deg, #f7adce, #b12869);
-        background-image: linear-gradient(5deg, #f7adce, #b12869);
+        background-image: -webkit-linear-gradient(5deg, #ff0000, #ff9800);
+        background-image: -o-linear-gradient(5deg, #ff0000, #ff9800);
+        background-image: -moz-linear-gradient(5deg, #ff0000, #ff9800);
+        background-image: linear-gradient(5deg, #ff0000, #ff9800);
       }
     }
 }
